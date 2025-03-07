@@ -1,0 +1,203 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', 'Roboto', 'Ubuntu', sans-serif;
+    
+}
+
+.home {
+    position: relative;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    background: url('../img/banner.png')  no-repeat center/cover;
+    background-size: cover;
+    filter: blur(30px) brightness(0.3); /* Difuminado y oscurecido */
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.hero{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.hero h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero p{
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.container-header {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; 
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+/* Estilos para la navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    flex: 2;
+    justify-content: center;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00b894; /* Verde agua, ajusta si es necesario */
+}
+
+/* Botones de Login y Register */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    font-size: 18px;
+    justify-content: flex-end;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    border: 0px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-register {
+    background-color: #00b894; /* Verde agua */
+    border: none;
+}
+
+.btn-register:hover {
+    background-color: #019870; /* Verde más oscuro */
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 0px;
+    width: 800px; /* Ajusta según tu diseño */
+    height: 70px;
+    gap: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.search-bar input,
+.search-bar select {
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px;
+    flex: 1; /* Hace que los elementos ocupen el mismo espacio */
+    font-size: 16px;
+}
+
+.search-btn {
+    background: #2a8975; /* Color del botón */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 0 15px 15px 0; /* Bordes redondeados en el botón */
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaciado entre el ícono y el texto */
+    height: 100%;
+}
+
+.search-bar button:hover {
+    background-color: #019870;
+}
+
+.divider {
+    width: 1px;
+    height: 25px;
+    background: #ccc; /* Línea divisoria */
+    margin: 0 10px;
+}
+
+/* Estadísticas */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stats p {
+    font-size: 16px;
+}
