@@ -154,6 +154,7 @@
     padding: 10px;
     flex: 1; /* Hace que los elementos ocupen el mismo espacio */
     font-size: 16px;
+    appearance: none;
 }
 
 .search-btn {
@@ -178,7 +179,6 @@
     width: 1px;
     height: 25px;
     background: #ccc; /* Línea divisoria */
-    margin: 0 10px;
 }
 
 /* Estadísticas */
