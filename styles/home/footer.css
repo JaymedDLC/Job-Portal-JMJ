@@ -1,0 +1,138 @@
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid del footer */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-about{
+    margin-right: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: flex-start;
+}
+/* Columnas del footer */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #bbb;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+
+.newsletter-form {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #111;
+    color: #fff;
+}
+
+.newsletter-form button {
+    background: #0f6d61;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background: #199c7d;
+}
+
+
+.copyright {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Sección de políticas */
+.footer-bottom {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+.terms-btn {
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.terms-btn a {
+    color: #fff;
+    
+}
+

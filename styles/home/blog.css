@@ -72,6 +72,9 @@
 
 
 .blog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 5px;
 }
 
@@ -82,8 +85,8 @@
 }
 
 .blog-title {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 520;
     color: #111;
     margin-bottom: 10px;
 }
@@ -92,7 +95,12 @@
     color: #199c7d;
     font-weight: bold;
     text-decoration: none;
-    font-size: 14px;
+    justify-self: flex-end;
+}
+
+.read-more a{
+    color: #199c7d;
+    text-decoration: none;
 }
 
 .arrow-icon{
