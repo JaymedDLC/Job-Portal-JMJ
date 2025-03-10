@@ -1,0 +1,103 @@
+
+.blog-section {
+    padding: 50px 20px;
+}
+
+
+.container-blog {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.blog-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.title-blog-section {
+    font-size: 50px;
+}
+
+.subtitle-blog-section {
+    font-size: 16px;
+    max-width: 500px;
+}
+
+
+
+/* Grid de las tarjetas */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Tarjeta del blog */
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    /*border-radius: 12px;*/
+    overflow: hidden;
+    gap: 10px;
+}
+
+/* Imagen del blog */
+.blog-image {
+    background: #ccc;
+    height: 300px;
+    border-radius: 12px;
+    position: relative;
+}
+
+/* Etiqueta superior */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #0f6d61;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.blog-badge {
+    background: #199c7d;
+}
+
+
+.blog-content {
+    padding: 5px;
+}
+
+.date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.blog-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: #199c7d;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.arrow-icon{
+    color: #199c7d;
+    margin-left: 5px;
+    font-size: 12;
+    text-align: center;
+}
