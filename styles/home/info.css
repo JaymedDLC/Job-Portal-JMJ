@@ -83,7 +83,8 @@
 
 .stat-info h3 {
     color: #027373;
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: 550;
 }
 
 /* Bloque Banner */
@@ -112,4 +113,50 @@
 .cta-banner h2 {
     font-size: 3rem;
     font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .info-container{
+        flex-direction: column;
+    }
+
+    .info-text{
+        margin: 0 20px;
+    }
+
+    .info-text h2{
+        font-size: 30px;
+
+    }
+
+    .info-text p,h2 {
+        text-align: center;
+    }
+
+    .info-text p{
+        font-size: 18px;
+    }
+
+    #learn-more{
+        display: none;
+    }
+
+    .btn-info{
+        width: 100%;
+    }
+
+    .info-stats{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .stat-info h3{
+        font-size: 60px;
+        font-weight: 550;
+    }
+
+    .cta-banner{
+        height: 500px;
+    }
 }
