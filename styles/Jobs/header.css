@@ -1,7 +1,7 @@
 .header {
     position: relative;
     background-position: center;
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
     color: white;
     justify-content: center;
