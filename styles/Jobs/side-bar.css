@@ -1,13 +1,26 @@
 /*Inicio Main Section*/
 
+.jobs__side-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre filtros y We Are Hiring */
+  background-color: transparent; /*color de fondo*/
+  max-height: 100%;
+  max-width: 350px;
+}
+
+.ad-container{
+  max-width: 100%;
+}
 
 .jobs-wrapper {
     margin: 0;
     padding: 40px;
-    background-color: #FFFFFF; /*Color de fondo*/
+    background-color: #FFFFFF; /*Color de fondo del "main"*/
     display: flex;
     flex-direction: row;
     max-width: 100%;
+    margin-bottom: 70px;
 }
 
 /*Filters*/
@@ -20,7 +33,7 @@
     border-radius: 8px;
     /* Para que la sección no ocupe todo el ancho (opcional) */
     max-width: 300px; 
-    flex-grow: 1;
+    flex-grow: 0;
     
   }
   
@@ -176,3 +189,47 @@
     margin: 5px;
 }
 /*Filters ends*/
+
+/*Hiring section*/
+
+.we-are-hiring {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  flex-grow: 0;
+  height: clamp(300px, 60vh, 600px); /*Nuca sera menor a 300px pero tampoco mayor a 600px y se mostrará a 60vh cuando se este dentro del rango*/
+  backdrop-filter: blur(0px);
+  overflow: hidden;
+  
+}
+
+.we-are-hiring::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  background: url('../../img/banner.png') no-repeat center/cover;
+  background-size: cover;
+  filter: blur(50px) brightness(0.6);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+.we-are-hiring__title {
+  font-size: 2rem;
+  text-align: left;
+  font-weight: Bold;
+}
+
+.we-are-hiring__subtitle {
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+/*End Hiring section*

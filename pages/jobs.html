@@ -11,7 +11,7 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="../styles/Jobs/header.css">
-    <link rel="stylesheet" href="../styles/Jobs/main-filters.css">
+    <link rel="stylesheet" href="../styles/Jobs/side-bar.css">
     <link rel="stylesheet" href="../styles/Jobs/main-jobs.css">
     
     <!--link rel="stylesheet" href="../styles/header.css"-->
@@ -61,297 +61,310 @@
         <div class="jobs-wrapper">
 
             <!-- Bloque de filtro-->
-            <aside class="jobs__filters-container">
+            <div class="jobs__side-bar">
                 
-                <!--Sección Buscar por titulo-->
-                <div class="jobs__filter-section">
-                    <h3 class="filters__tittle">Search by Job Title</h3>
-                    <div class="filters__input-wrapper">
-                        <span class="filters__icon"></span>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text">
+                <aside class="jobs__filters-container">
+                    <!--Sección Buscar por titulo-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__tittle">Search by Job Title</h3>
+                        <div class="filters__input-wrapper">
+                            <span class="filters__icon"></span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text">
+                        </div>
                     </div>
-                </div>
 
-                <!--Sección Buscar por ubicación-->
-                <div class="jobs__filter-section">
-                    <h3 class="filters__tittle">Sort By</h3>
-                    <div class="filters__input-wrapper">
-                        <span class="filters__icon"></span>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <select class="filters_location" id="filters-city">
-                            <option value="">Choose city</option>
-                        </select>
+                    <!--Sección Buscar por ubicación-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__tittle">Sort By</h3>
+                        <div class="filters__input-wrapper">
+                            <span class="filters__icon"></span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <select class="filters_location" id="filters-city">
+                                <option value="">Choose city</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
 
-                <!--Inicio de Category-->
-                <div class="jobs__filter-section">
-                    <h3 class="filters__tittle">Category</h3>
-                    <ul class="filters__list">
-                        <!--Inicio de items-->
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Commerce">
-                                Commerce
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Commerce" 
-                                id="Commerce">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
+                    <!--Inicio de Category-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__tittle">Category</h3>
+                        <ul class="filters__list">
+                            <!--Inicio de items-->
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Commerce">
+                                    Commerce
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Commerce" 
+                                    id="Commerce">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
 
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Telecomunications">
-                                Telecomunications
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Telecomunications" 
-                                id="Telecomunications">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Telecomunications">
+                                    Telecomunications
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Telecomunications" 
+                                    id="Telecomunications">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
 
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Hotels-Tourism">
-                                Hotels & Tourism
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Hotels-Tourism" 
-                                id="Hotels-Tourism">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Hotels-Tourism">
+                                    Hotels & Tourism
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Hotels-Tourism" 
+                                    id="Hotels-Tourism">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
 
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Education">
-                                Education
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Education" 
-                                id="Education">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Education">
+                                    Education
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Education" 
+                                    id="Education">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
 
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Financial-Services">
-                                Financial Services
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Financial-Services" 
-                                id="Financial-Services">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-                        <!--Fin de items-->
-                    </ul>
-                    <div class="filters__category">
-                        <input type="button" value="Show more">
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Financial-Services">
+                                    Financial Services
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Financial-Services" 
+                                    id="Financial-Services">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+                            <!--Fin de items-->
+                        </ul>
+                        <div class="filters__category">
+                            <input type="button" value="Show more">
+                        </div>
                     </div>
-                </div>
-                <!--Fin de Category-->
+                    <!--Fin de Category-->
 
-                <!--Inicio de JobType-->
-                <div class="jobs__filter-section">
-                    <h3 class="filters__tittle">Job Type</h3>
-                    <ul class="filters__list">
+                    <!--Inicio de JobType-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__tittle">Job Type</h3>
+                        <ul class="filters__list">
+                            <!--Inicio de items-->
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Full-time">
+                                    Full Time
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Full-time" 
+                                    id="Full-time">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Part-time">
+                                    Part Time
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Part-time" 
+                                    id="Part-time">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Freelance">
+                                    Freelance
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Freelance" 
+                                    id="Freelance">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Seasonal">
+                                    Seasonal
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Seasonal" 
+                                    id="Seasonal">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Fixed-Price">
+                                    Fixed Price
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Fixed-Price" 
+                                    id="Fixed-Price">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+                            <!--Fin de items-->
+                        </ul>
+                    </div>
+                    <!--Fin de JobType-->
+
+                    <!--Inicio de Experience Level-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__tittle">Experience Level</h3>
+                        <ul class="filters__list">
+                            <!--Inicio de items-->
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="No-experience">
+                                    No-experience
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="No-experience" 
+                                    id="No-experience">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Fresher">
+                                    Fresher
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Fresher" 
+                                    id="Fresher">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Intermediate">
+                                    Intermediate
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Intermediate" 
+                                    id="Intermediate">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Expert">
+                                    Expert
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Expert" 
+                                    id="Expert">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+                            <!--Fin de items-->
+                        </ul>
+                    </div>
+                    <!--Fin de Experience Level-->
+
+                    <!--Inicio de Date Posted-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__tittle">Date Posted</h3>
+                        <ul class="filters__list">
+                            <!--Inicio de items-->
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="All">
+                                    All
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="All" 
+                                    id="All">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Last-Hour">
+                                    Last Hour
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Last-Hour" 
+                                    id="Last-Hour">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Last-24-Hours">
+                                    Last 24 Hours
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Last-24-Hours" 
+                                    id="Last-24-Hours">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Last-7-Days">
+                                    Last 7 Days
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Last-7-Days" 
+                                    id="Last-7-Days">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Last-30-Days">
+                                    Last 30 Days
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Last-30-Days" 
+                                    id="Last-30-Days">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+                            <!--Fin de items-->
+                        </ul>
+                    </div>
+                    <!--Fin de Date Posted-->
+
+                    <!--Inicio de Salary Range-->
+                    <!--Fin de Salary Range-->
+
+                    <!--Inicio de Tags-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__tittle">Tags</h3>
                         <!--Inicio de items-->
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Full-time">
-                                Full Time
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Full-time" 
-                                id="Full-time">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
+                        <span class="jobs-count">engineering</span>
+                        <span class="jobs-count">design</span>
+                        <span class="jobs-count">ui/ux</span>
+                        <span class="jobs-count">marketing</span>
+                        <span class="jobs-count">management</span>
+                        <span class="jobs-count">soft</span>
+                        <span class="jobs-count">construction</span>
 
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Part-time">
-                                Part Time
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Part-time" 
-                                id="Part-time">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Freelance">
-                                Freelance
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Freelance" 
-                                id="Freelance">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Seasonal">
-                                Seasonal
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Seasonal" 
-                                id="Seasonal">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Fixed-Price">
-                                Fixed Price
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Fixed-Price" 
-                                id="Fixed-Price">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
                         <!--Fin de items-->
-                    </ul>
-                </div>
-                <!--Fin de JobType-->
+                    </div>
+                    <!--Fin de Tags-->
+                </aside>
 
-                <!--Inicio de Experience Level-->
-                <div class="jobs__filter-section">
-                    <h3 class="filters__tittle">Experience Level</h3>
-                    <ul class="filters__list">
-                        <!--Inicio de items-->
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="No-experience">
-                                No-experience
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="No-experience" 
-                                id="No-experience">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
+                
 
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Fresher">
-                                Fresher
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Fresher" 
-                                id="Fresher">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Intermediate">
-                                Intermediate
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Intermediate" 
-                                id="Intermediate">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Expert">
-                                Expert
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Expert" 
-                                id="Expert">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-                        <!--Fin de items-->
-                    </ul>
-                </div>
-                <!--Fin de Experience Level-->
-
-                <!--Inicio de Date Posted-->
-                <div class="jobs__filter-section">
-                    <h3 class="filters__tittle">Date Posted</h3>
-                    <ul class="filters__list">
-                        <!--Inicio de items-->
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="All">
-                                All
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="All" 
-                                id="All">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Last-Hour">
-                                Last Hour
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Last-Hour" 
-                                id="Last-Hour">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Last-24-Hours">
-                                Last 24 Hours
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Last-24-Hours" 
-                                id="Last-24-Hours">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Last-7-Days">
-                                Last 7 Days
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Last-7-Days" 
-                                id="Last-7-Days">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-
-                        <li class="filters__list-item">
-                            <label class="filters__checkbox-label" for="Last-30-Days">
-                                Last 30 Days
-                                <input type="checkbox" 
-                                class="filters__checkbox"
-                                name="Last-30-Days" 
-                                id="Last-30-Days">
-                            </label>
-                            <span class="filters__count">10</span>
-                        </li>
-                        <!--Fin de items-->
-                    </ul>
-                </div>
-                <!--Fin de Date Posted-->
-
-                <!--Inicio de Salary Range-->
-                <!--Fin de Salary Range-->
-
-                <!--Inicio de Tags-->
-                <div class="jobs__filter-section">
-                    <h3 class="filters__tittle">Tags</h3>
-                    <!--Inicio de items-->
-                    <span class="jobs-count">engineering</span>
-                    <span class="jobs-count">design</span>
-                    <span class="jobs-count">ui/ux</span>
-                    <span class="jobs-count">marketing</span>
-                    <span class="jobs-count">management</span>
-                    <span class="jobs-count">soft</span>
-                    <span class="jobs-count">construction</span>
-
-                    <!--Fin de items-->
-                </div>
-                <!--Fin de Tags-->
-            </aside>
+                <!-- Sección "We Are Hiring" al final -->
+                 <div class="ad-container">
+                    <div class="we-are-hiring">
+                        <h3 class="we-are-hiring__title">We Are Hiring</h3>
+                        <p class="we-are-hiring__subtitle">Apply Today!</p>
+                    </div>
+                 </div>
+                
+            </div>
 
             <!-- Bloque de trabajos disponibles-->
             <section class="jobs__jobs-container">
