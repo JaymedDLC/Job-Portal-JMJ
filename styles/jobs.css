@@ -143,7 +143,175 @@
     /* Verde más oscuro */
 }
 
+/*Inicio Main Section*/
 
+.jobs-wrapper {
+    margin: 0;
+    padding: 40px;
+    background-color: #FFFFFF; /*Color de fondo*/
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+/* Contenedor general de los filtros */
+.jobs__filters-container {
+    /* Color de fondo aproximado al de la imagen */
+    background-color: #EBF5F4; 
+    padding: 1.5rem;
+    border-radius: 8px;
+    /* Para que la sección no ocupe todo el ancho (opcional) */
+    max-width: 300px; 
+    flex-grow: 1;
+    border: 1px solid #000;
+  }
+  
+  /* Sección individual de cada filtro (buscar por título, ubicación, etc.) */
+  .jobs__filter-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Título de cada sección */
+  .filters__tittle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  /* Contenedor que envuelve el input/select y el ícono */
+  .filters__input-wrapper {
+    position: relative;        /* Permite posicionar íconos con absolute si se desea */
+    display: flex;
+    align-items: center;
+    
+    /* Fondo blanco, bordes redondeados para simular campo de texto */
+    background-color: #fff;
+    border-radius: 9999px;     /* “forma de píldora” */
+    border: 1px solid #ccc;
+    
+    /* Espacios internos */
+    padding: 0.5rem 1rem;
+  }
+  
+    /* Ícono dentro del contenedor */
+    .filters__input-wrapper i {
+        color: #666;
+        margin-right: 0.5rem;
+    }
+  
+  /* Estilo para el input */
+  .filters__input-wrapper input {
+    flex: 1;                /* Para que ocupe todo el espacio disponible */
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Placeholder del input (estilo opcional) */
+  .filters__input-wrapper input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Estilo para el select */
+  .filters__input-wrapper select {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.9rem;
+    color: #333;
+    appearance: none; /* Quita la flechita nativa en algunos navegadores */
+  }
+  
+  .jobs__jobs-container {
+    flex-grow: 3;
+    margin-left: 1.5rem;
+    border: 1px solid #000;
+  }
+  
+    /* Espaciado general entre secciones de filtros */
+    .jobs__filter-section {
+        margin-bottom: 1.5rem;
+    }
+
+.filters__category input{
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #00b894;
+    color: white;
+    margin-top: 5px;
+}
+
+/* Título de la sección (Category, Job Type, etc.) */
+.filters__tittle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+/* Quitar estilos de lista por defecto */
+.filters__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Separación entre ítems */
+.filters__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* El label se queda a la izquierda y el count a la derecha */
+    margin-bottom: 0.75rem;
+  }
+
+/* Label que contiene texto + checkbox  */
+.filters__checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    gap: 0.5rem;   /* Espacio entre el checkbox y el texto */
+    flex: 1;       /* Toma el máximo espacio disponible para empujar el count a la derecha */
+  }
+
+/* Checkbox */
+.filters__checkbox {
+    accent-color: #2CA8A4;   /* Color moderno para el checkbox en navegadores compatibles */
+    transform: scale(1.2);   /* Aumenta un poco el tamaño */
+    margin-right: 0.5rem; 
+    order: -1;    /* Espacio entre el checkbox y el texto */
+  }
+
+/* El “pill” con el número (count) */
+.filters__count {
+    background-color: #E8F2F2;
+    color: #333;
+    font-size: 0.85rem;
+    border-radius: 9999px;   /* Forma de píldora */
+    padding: 0.2rem 0.6rem;
+    text-align: center;
+    min-width: 2rem;         /* Asegura un tamaño mínimo */
+
+  }
+
+.jobs-count {
+    display: inline-block;
+    background: #30968915;
+    padding: 5px 10px;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #309689;
+    margin: 5px;
+}
+
+/*Fin Main Section*/
 
 /* Trabajos Recientes */
 
@@ -288,3 +456,4 @@ span {
 }
 
 /*Trabajos recientes ends*/
+
