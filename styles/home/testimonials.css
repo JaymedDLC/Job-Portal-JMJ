@@ -86,3 +86,9 @@
     font-size: 14px;
     color: #888;
 }
+
+@media (max-width:480px){
+    .title-testimonial{
+        font-size: 30px;
+    }
+}
