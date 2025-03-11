@@ -172,3 +172,77 @@
 }
 
 /*Trabajos recientes ends*/
+
+/*Inicio de paginación*/
+/* Contenedor principal de la paginación */
+.jobs__pagination {
+    position: relative;         /* Permite posicionar elementos hijos de forma absoluta */
+    display: flex;
+    justify-content: center;    /* Centra el contenido (el contenedor de los botones) */
+    align-items: center;
+    margin-top: 1.5rem;         /* Espacio superior, ajústalo según tu diseño */
+  }
+  
+  /* Contenedor de los números de página */
+  .page-numbers {
+    display: flex;
+    gap: 0.5rem;              /* Espacio entre cada botón */
+  }
+  
+  /* Estilos base para cada botón de página */
+  .page-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;           /* Ancho mínimo */
+    height: 32px;              /* Alto fijo */
+    padding: 0 12px;
+    border: 1px solid #c4c4c4; /* Borde gris claro */
+    border-radius: 4px;        /* Esquinas redondeadas */
+    background-color: #fff;    /* Fondo blanco */
+    color: #333;               /* Color de texto oscuro */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Botón activo (página seleccionada) */
+  .page-button.active {
+    background-color: #4EA3A7; /* Fondo verde azulado */
+    color: #fff;               /* Texto blanco */
+    border-color: transparent; /* Sin borde */
+  }
+  
+  /* Efecto hover para botones inactivos */
+  .page-button:not(.active):hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Contenedor del botón "Next" posicionado a la derecha */
+  .next-button-container {
+    position: absolute;
+    right: 0;
+  }
+  
+  /* Estilo para el botón "Next" */
+  .next-page {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 0 16px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Efecto hover en el botón "Next" */
+  .next-page:hover {
+    background-color: #f5f5f5;
+  }
+  
+/*Fin de paginación*/
