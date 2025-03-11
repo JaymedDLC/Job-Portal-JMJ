@@ -33,6 +33,10 @@
     text-decoration: underline;
 }
 
+.view-all-down{
+    display: none;
+}
+
 .job-list {
     display: flex;
     flex-direction: column;
@@ -132,4 +136,89 @@ span {
     height: 40px;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+@media (max-width: 480px) {
+    .container-jobs{
+        margin: 10px 20px;
+        padding: 0;
+    }
+
+    .container-jobs h2 {
+        font-size: 1.6rem; 
+        text-align: center;
+    }
+
+    .container-jobs p {
+        font-size: 16px; 
+        text-align: center;
+    }
+
+    .view-all-down{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .view-all-up{
+        display: none;
+    }
+
+    .job-card {
+        padding: 30px; 
+        border-radius: 15px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        gap: 10px; 
+    }
+
+    .job-card h3 {
+        font-size: 24px; /* Disminuir el tamaño del título del trabajo */
+    }
+
+    .job-card p,
+    .job-card span {
+        font-size: 16px; 
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px; 
+        margin-top: 10px;
+         
+    }
+
+    .job-details{
+        text-align: left;
+        align-items: flex-start;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+
+    .job-info {
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 20px;
+    }
+
+    .time-label {
+        font-size: 12px; /* Disminuir el tamaño del texto */
+        padding: 2px 6px; /* Ajustar el padding */
+    }
+
+    .job-btn {
+        width: 100%;
+        justify-self: center;
+        padding: 8px 10px; 
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px ;
+    }
+
+    .company-job-logo {
+        width: 30px; /* Ajustar el tamaño del logo */
+        height: 30px; /* Ajustar el tamaño del logo */
+        margin-right: 5px; /* Ajustar el margin-right */
+    }
 }
