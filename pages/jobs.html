@@ -347,146 +347,138 @@
 
             <!-- Bloque de trabajos disponibles-->
             <section class="jobs__jobs-container">
-                <div class="jobs-sorted-container">
-                    <div class="jobs__sorted-by">
-                        <span>Showing 6-6 of 10 results</span>
-                        <select name="sorted-by" id="sorted-by">
-                            <option value="newest">Latest</option>
-                            <option value="oldest">Oldest</option>
-                            <option value="salary">Salary</option>
-                            <option value="location">Location</option>
-                    </div>
+                <!-- Sección de Ofertas Recientes --> 
+                <section class="recent-jobs">
+                    <div class="container-jobs">
+                        <div class="job-list">
+                            <div class="jobs-sorted-container">
+                                <div class="jobs__sorted-by">
+                                    <span>Showing 6-6 of 10 results</span>
+                                </div>
+                                <div class="jobs__sorted-by-selector">
+                                    <select name="sorted-by" id="sorted-by">
+                                        <option value="newest">Latest</option>
+                                        <option value="oldest">Oldest</option>
+                                        <option value="salary">Salary</option>
+                                        <option value="location">Location</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="job-card">
+                                <div class="job-meta">
+                                    <span class="time-label">10 min ago</span>
+                                    <i class="far fa-bookmark save-icon"></i>
+                                </div>
+                                <div class="job-header">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify" class="company-job-logo">
+                                    <div class="job-details">
+                                        <h3>Cybersecurity Director</h3>
+                                        <p>Spotify</p>
+                                    </div>
+                                </div>
+                                <div class="job-info">
+                                    <span><i class="fas fa-music icons"></i> Music & Tech</span>
+                                    <span><i class="fas fa-clock icons"></i> Full time</span>
+                                    <span><i class="fa-solid fa-wallet icons"></i> $120000-$140000</span>
+                                    <span><i class="fas fa-map-marker-alt icons"></i> Stockholm, Sweden</span>
+                                    <button class="job-btn">Job Details</button>
+                                </div>
+                            </div>
 
-                </div>
-                <div class="jobs__list">
-                    <div class="jobs__card">
+                            <div class="job-card">
+                                <div class="job-meta">
+                                    <span class="time-label">12 min ago</span>
+                                    <i class="far fa-bookmark save-icon"></i>
+                                </div>
+                                <div class="job-header">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="company-job-logo">
+                                    <div class="job-details">
+                                        <h3>UI/UX Designer</h3>
+                                        <p>Apple</p>
+                                    </div>
+                                </div>
+                                <div class="job-info">
+                                    <span><i class="fas fa-mobile-alt icons"></i> Technology</span>
+                                    <span><i class="fas fa-clock icons"></i> Part time</span>
+                                    <span><i class="fa-solid fa-wallet icons"></i> $90000-$110000</span>
+                                    <span><i class="fas fa-map-marker-alt icons"></i> Cupertino, USA</span>
+                                    <button class="job-btn">Job Details</button>
+                                </div>
+                            </div>
 
+                            <div class="job-card">
+                                <div class="job-meta">
+                                    <span class="time-label">15 min ago</span>
+                                    <i class="far fa-bookmark save-icon"></i>
+                                </div>
+                                <div class="job-header">
+                                    <img src='https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_"G"_logo.svg' alt="Google" class="company-job-logo">
+                                    <div class="job-details">
+                                        <h3>Cloud Solutions Engineer</h3>
+                                        <p>Google</p>
+                                    </div>
+                                </div>
+                                <div class="job-info">
+                                    <span><i class="fas fa-cloud icons"></i> Cloud Computing</span>
+                                    <span><i class="fas fa-clock icons"></i> Full time</span>
+                                    <span><i class="fa-solid fa-wallet icons"></i> $130000-$150000</span>
+                                    <span><i class="fas fa-map-marker-alt icons"></i> Mountain View, USA</span>
+                                    <button class="job-btn">Job Details</button>
+                                </div>
+                            </div>
+
+                            <div class="job-card">
+                                <div class="job-meta">
+                                    <span class="time-label">24 min ago</span>
+                                    <i class="far fa-bookmark save-icon"></i>
+                                </div>
+                                <div class="job-header">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="company-job-logo">
+                                    <div class="job-details">
+                                        <h3>Software Engineer - AI</h3>
+                                        <p>Microsoft</p>
+                                    </div>
+                                </div>
+                                <div class="job-info">
+                                    <span><i class="fas fa-laptop-code icons"></i> Software Development</span>
+                                    <span><i class="fas fa-clock icons"></i> Full time</span>
+                                    <span><i class="fa-solid fa-wallet icons"></i> $115000-$135000</span>
+                                    <span><i class="fas fa-map-marker-alt icons"></i> Redmond, USA</span>
+                                    <button class="job-btn">Job Details</button>
+                                </div>
+                            </div>
+
+                            <div class="job-card">
+                                <div class="job-meta">
+                                    <span class="time-label">26 min ago</span>
+                                    <i class="far fa-bookmark save-icon"></i>
+                                </div>
+                                <div class="job-header">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" alt="Amazon" class="company-job-logo">
+                                    <div class="job-details">
+                                        <h3>Data Scientist</h3>
+                                        <p>Amazon</p>
+                                    </div>
+                                </div>
+                                <div class="job-info">
+                                    <span><i class="fas fa-chart-line icons"></i> E-commerce & AI</span>
+                                    <span><i class="fas fa-clock icons"></i> Full time</span>
+                                    <span><i class="fa-solid fa-wallet icons"></i> $125000-$145000</span>
+                                    <span><i class="fas fa-map-marker-alt icons"></i> Seattle, USA</span>
+                                    <button class="job-btn">Job Details</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
                 <div class="jobs__pagination">
-
+                    <!-- Aquí puedes agregar la paginación si es necesario -->
                 </div>
             </section>
         </div>
     </main>
     
-    <!-- Sección de Ofertas Recientes 
-    <section class="recent-jobs">
-        <div class="container-jobs">
-            <h2>Recent Jobs Available</h2>
-            <div class="header">
-                <p>At eu lobortis pretium tristique amet lacus ut aenean aliquet...</p>
-                <a href="#" class="view-all">View all</a>
-            </div>
-
-            <div class="job-list">
-                <div class="job-card">
-                    <div class="job-meta">
-                        <span class="time-label">10 min ago</span>
-                        <i class="far fa-bookmark save-icon"></i>
-                    </div>
-                    <div class="job-header">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify" class="company-job-logo">
-                        <div class="job-details">
-                            <h3>Cybersecurity Director</h3>
-                            <p>Spotify</p>
-                        </div>
-                    </div>
-                    <div class="job-info">
-                        <span><i class="fas fa-music icons"></i> Music & Tech</span>
-                        <span><i class="fas fa-clock icons"></i> Full time</span>
-                        <span><i class="fa-solid fa-wallet icons"></i> $120000-$140000</span>
-                        <span><i class="fas fa-map-marker-alt icons"></i> Stockholm, Sweden</span>
-                        <button class="job-btn">Job Details</button>
-                    </div>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-meta">
-                        <span class="time-label">12 min ago</span>
-                        <i class="far fa-bookmark save-icon"></i>
-                    </div>
-                    <div class="job-header">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="company-job-logo">
-                        <div class="job-details">
-                            <h3>UI/UX Designer</h3>
-                            <p>Apple</p>
-                        </div>
-                    </div>
-                    <div class="job-info">
-                        <span><i class="fas fa-mobile-alt icons"></i> Technology</span>
-                        <span><i class="fas fa-clock icons"></i> Part time</span>
-                        <span><i class="fa-solid fa-wallet icons"></i> $90000-$110000</span>
-                        <span><i class="fas fa-map-marker-alt icons"></i> Cupertino, USA</span>
-                        <button class="job-btn">Job Details</button>
-                    </div>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-meta">
-                        <span class="time-label">15 min ago</span>
-                        <i class="far fa-bookmark save-icon"></i>
-                    </div>
-                    <div class="job-header">
-                        <img src='https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_"G"_logo.svg' alt="Google" class="company-job-logo">
-                        <div class="job-details">
-                            <h3>Cloud Solutions Engineer</h3>
-                            <p>Google</p>
-                        </div>
-                    </div>
-                    <div class="job-info">
-                        <span><i class="fas fa-cloud icons"></i> Cloud Computing</span>
-                        <span><i class="fas fa-clock icons"></i> Full time</span>
-                        <span><i class="fa-solid fa-wallet icons"></i> $130000-$150000</span>
-                        <span><i class="fas fa-map-marker-alt icons"></i> Mountain View, USA</span>
-                        <button class="job-btn">Job Details</button>
-                    </div>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-meta">
-                        <span class="time-label">24 min ago</span>
-                        <i class="far fa-bookmark save-icon"></i>
-                    </div>
-                    <div class="job-header">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="company-job-logo">
-                        <div class="job-details">
-                            <h3>Software Engineer - AI</h3>
-                            <p>Microsoft</p>
-                        </div>
-                    </div>
-                    <div class="job-info">
-                        <span><i class="fas fa-laptop-code icons"></i> Software Development</span>
-                        <span><i class="fas fa-clock icons"></i> Full time</span>
-                        <span><i class="fa-solid fa-wallet icons"></i> $115000-$135000</span>
-                        <span><i class="fas fa-map-marker-alt icons"></i> Redmond, USA</span>
-                        <button class="job-btn">Job Details</button>
-                    </div>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-meta">
-                        <span class="time-label">26 min ago</span>
-                        <i class="far fa-bookmark save-icon"></i>
-                    </div>
-                    <div class="job-header">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" alt="Amazon" class="company-job-logo">
-                        <div class="job-details">
-                            <h3>Data Scientist</h3>
-                            <p>Amazon</p>
-                        </div>
-                    </div>
-                    <div class="job-info">
-                        <span><i class="fas fa-chart-line icons"></i> E-commerce & AI</span>
-                        <span><i class="fas fa-clock icons"></i> Full time</span>
-                        <span><i class="fa-solid fa-wallet icons"></i> $125000-$145000</span>
-                        <span><i class="fas fa-map-marker-alt icons"></i> Seattle, USA</span>
-                        <button class="job-btn">Job Details</button>
-                    </div>
-                </div>
-            </div>
-            
-    </section> -->
+    
 
 
       

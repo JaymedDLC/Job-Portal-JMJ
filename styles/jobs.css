@@ -145,6 +145,7 @@
 
 /*Inicio Main Section*/
 
+
 .jobs-wrapper {
     margin: 0;
     padding: 40px;
@@ -154,7 +155,9 @@
     max-width: 100%;
 }
 
+/*Filters*/
 /* Contenedor general de los filtros */
+
 .jobs__filters-container {
     /* Color de fondo aproximado al de la imagen */
     background-color: #EBF5F4; 
@@ -163,7 +166,7 @@
     /* Para que la sección no ocupe todo el ancho (opcional) */
     max-width: 300px; 
     flex-grow: 1;
-    border: 1px solid #000;
+    
   }
   
   /* Sección individual de cada filtro (buscar por título, ubicación, etc.) */
@@ -229,7 +232,7 @@
   .jobs__jobs-container {
     flex-grow: 3;
     margin-left: 1.5rem;
-    border: 1px solid #000;
+    
   }
   
     /* Espaciado general entre secciones de filtros */
@@ -245,6 +248,12 @@
     background-color: #00b894;
     color: white;
     margin-top: 5px;
+}
+
+.filters__category input:hover {
+    background-color: #019870;
+    cursor: pointer;
+    /* Verde más oscuro */
 }
 
 /* Título de la sección (Category, Job Type, etc.) */
@@ -300,6 +309,7 @@
 
   }
 
+
 .jobs-count {
     display: inline-block;
     background: #30968915;
@@ -310,47 +320,83 @@
     color: #309689;
     margin: 5px;
 }
+/*Filters ends*/
+
+/*Inicio de Jobs*/
+
+.jobs-sorted-container {
+    display: flex;
+    align-items: center;        /* Alinea verticalmente en el centro */
+    justify-content: space-between; /* Separa “Showing 6-6…” y el select */
+    margin-bottom: 1rem;       /* Espacio inferior (opcional) */
+  }
+
+.jobs__sorted-by{
+    
+    align-self: center;
+    flex-grow: 1;
+}
+
+.jobs__sorted-by-selector {
+    position: relative;        /* Permite colocar la flecha con ::after */
+    display: inline-block;
+  }
+
+/* Estilos para el select */
+.jobs__sorted-by-selector select {
+  /* Quitar estilos nativos de los navegadores */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  /* Borde y color de fondo */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  
+  /* Espaciado interno */
+  padding: 0.4rem 1.5rem 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+  
+  /* Ancho mínimo para que no se haga demasiado pequeño */
+  min-width: 140px;
+}
+
+/* Flecha personalizada usando un pseudo-elemento */
+.jobs__sorted-by-selector::after {
+    content: '▾';                  /* Flecha hacia abajo (puedes usar otro símbolo) */
+    position: absolute;
+    right: 0.8rem;                 /* Alineada a la derecha, dentro del select */
+    top: 50%;
+    transform: translateY(-50%);   /* Centrada verticalmente */
+    pointer-events: none;          /* Para que no bloquee el clic en el select */
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+/*Fin de Jobs*/
+
 
 /*Fin Main Section*/
 
 /* Trabajos Recientes */
 
 .recent-jobs {
-    padding: 40px;
+    padding: 0px;
     background-color: #fff;
+    border-radius: 10px;
 }
 
 .container-jobs {
-    margin: 10px 40px;
-    ;
+    margin: 10px 0px;
     padding: 30px;
     gap: 50px
 }
 
-.headerr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.headerr p {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.container-jobs h2 {
-    font-size: 50px;
-}
-
-.view-all {
-    font-size: 25px;
-    color: #019870;
-    text-decoration: underline;
-}
-
 .job-list {
+    
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -373,8 +419,7 @@
     margin-bottom: 5px;
 }
 
-.job-card p,
-span {
+.job-card p,span {
     font-size: 20px;
 
 }
@@ -426,8 +471,6 @@ span {
     align-items: center;
     justify-content: space-between;
 }
-
-
 
 .icons {
     color: #2a8975;
