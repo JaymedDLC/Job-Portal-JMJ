@@ -15,7 +15,7 @@
 
 .jobs-wrapper {
     margin: 0;
-    padding: 40px;
+    padding: 40px 50px;
     background-color: #FFFFFF; /*Color de fondo del "main"*/
     display: flex;
     flex-direction: row;
