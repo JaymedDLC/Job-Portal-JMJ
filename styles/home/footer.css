@@ -136,3 +136,36 @@
     
 }
 
+@media (max-width:480px){
+    .footer-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo{
+       justify-content: center;
+    }
+
+
+    .footer-bottom{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .terms-btn{
+        gap: 25px;
+    }
+    
+
+}
+
+@media (max-width: 960px){
+    
+    .newsletter-section{
+        grid-column-start: 3;
+    }
+}
+
