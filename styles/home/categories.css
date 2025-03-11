@@ -61,3 +61,44 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+@media (max-width: 480px) {
+    .categories-header h2 {
+        font-size: 30px;
+    }
+
+    .categories-header p {
+        font-size: 14px; 
+        padding: 20px; 
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+        gap: 10px; 
+    }
+
+    .category-card {
+        padding: 15px; /* Ajustar el padding */
+        border-radius: 15px; /* Ajustar el border-radius */
+        box-shadow: 0 2px 4px rgba(95, 95, 95, 0.1); /* Ajustar el box-shadow */
+    }
+
+    .categories-icon {
+        font-size: 30px; /* Ajustar el tamaño del ícono */
+        margin-top: 10px; /* Ajustar el margin-top */
+        margin-bottom: 10px; /* Ajustar el margin-bottom */
+    }
+
+    .category-card h3 {
+        font-size: 1rem; /* Ajustar el tamaño del título */
+        margin-top: 10px; /* Ajustar el margin-top */
+        margin-bottom: 10px; /* Ajustar el margin-bottom */
+    }
+
+    .jobs-count {
+        font-size: 14px; /* Ajustar el tamaño del texto */
+        padding: 3px 8px; /* Ajustar el padding */
+        margin-top: 10px; /* Ajustar el margin-top */
+        margin-bottom: 10px; /* Ajustar el margin-bottom */
+    }
+}
