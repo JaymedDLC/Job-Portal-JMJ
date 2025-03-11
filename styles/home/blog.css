@@ -109,3 +109,48 @@
     font-size: 12;
     text-align: center;
 }
+
+@media (max-width: 480px) {
+    .title-blog-section {
+        font-size: 30px; /* Ajustar el tamaño del título */
+    }
+
+    .subtitle-blog-section {
+        font-size: 14px; 
+        max-width: 100%; 
+        padding: 10px;
+        text-align: center;
+    }
+
+    #view-blogs{
+        display: none;
+    }
+
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Ajustar las columnas */
+        gap: 10px; 
+        overflow-x: scroll; 
+    }
+
+    .blog-card {
+        padding: 10px; 
+    }
+
+    .blog-image {
+        height: 200px; 
+        border-radius: 10px; 
+    }
+
+    .blog-title {
+        font-size: 18px; 
+    }
+
+    .read-more {
+        font-size: 14px; 
+    }
+
+    .arrow-icon {
+        font-size: 10px;
+    }
+}
