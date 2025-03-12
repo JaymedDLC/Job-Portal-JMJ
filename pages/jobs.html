@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../styles/Jobs/header.css">
     <link rel="stylesheet" href="../styles/Jobs/side-bar.css">
     <link rel="stylesheet" href="../styles/Jobs/main-jobs.css">
+    <link rel="stylesheet" href="../styles/Jobs/jobs-category.css">
     
     <!--link rel="stylesheet" href="../styles/header.css"-->
 
@@ -66,7 +67,7 @@
                 <aside class="jobs__filters-container">
                     <!--Sección Buscar por titulo-->
                     <div class="jobs__filter-section">
-                        <h3 class="filters__tittle">Search by Job Title</h3>
+                        <h3 class="filters__title">Search by Job Title</h3>
                         <div class="filters__input-wrapper">
                             <span class="filters__icon"></span>
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -76,7 +77,7 @@
 
                     <!--Sección Buscar por ubicación-->
                     <div class="jobs__filter-section">
-                        <h3 class="filters__tittle">Sort By</h3>
+                        <h3 class="filters__title">Sort By</h3>
                         <div class="filters__input-wrapper">
                             <span class="filters__icon"></span>
                             <i class="fa-solid fa-location-dot"></i>
@@ -88,7 +89,7 @@
 
                     <!--Inicio de Category-->
                     <div class="jobs__filter-section">
-                        <h3 class="filters__tittle">Category</h3>
+                        <h3 class="filters__title">Category</h3>
                         <ul class="filters__list">
                             <!--Inicio de items-->
                             <li class="filters__list-item">
@@ -155,7 +156,7 @@
 
                     <!--Inicio de JobType-->
                     <div class="jobs__filter-section">
-                        <h3 class="filters__tittle">Job Type</h3>
+                        <h3 class="filters__title">Job Type</h3>
                         <ul class="filters__list">
                             <!--Inicio de items-->
                             <li class="filters__list-item">
@@ -219,7 +220,7 @@
 
                     <!--Inicio de Experience Level-->
                     <div class="jobs__filter-section">
-                        <h3 class="filters__tittle">Experience Level</h3>
+                        <h3 class="filters__title">Experience Level</h3>
                         <ul class="filters__list">
                             <!--Inicio de items-->
                             <li class="filters__list-item">
@@ -272,7 +273,7 @@
 
                     <!--Inicio de Date Posted-->
                     <div class="jobs__filter-section">
-                        <h3 class="filters__tittle">Date Posted</h3>
+                        <h3 class="filters__title">Date Posted</h3>
                         <ul class="filters__list">
                             <!--Inicio de items-->
                             <li class="filters__list-item">
@@ -339,22 +340,20 @@
 
                     <!--Inicio de Tags-->
                     <div class="jobs__filter-section">
-                        <h3 class="filters__tittle">Tags</h3>
+                        <h3 class="filters__title">Tags</h3>
                         <!--Inicio de items-->
-                        <span class="jobs-count">engineering</span>
-                        <span class="jobs-count">design</span>
-                        <span class="jobs-count">ui/ux</span>
-                        <span class="jobs-count">marketing</span>
-                        <span class="jobs-count">management</span>
-                        <span class="jobs-count">soft</span>
-                        <span class="jobs-count">construction</span>
+                        <span class="jobs-tag">engineering</span>
+                        <span class="jobs-tag">design</span>
+                        <span class="jobs-tag">ui/ux</span>
+                        <span class="jobs-tag">marketing</span>
+                        <span class="jobs-tag">management</span>
+                        <span class="jobs-tag">soft</span>
+                        <span class="jobs-tag">construction</span>
 
                         <!--Fin de items-->
                     </div>
                     <!--Fin de Tags-->
                 </aside>
-
-                
 
                 <!-- Sección "We Are Hiring" al final -->
                  <div class="ad-container">
@@ -511,6 +510,99 @@
             </section>
         </div>
     </main>
+
+    <!-- Sección de Categorias -->
+    <section id="categorie" class="categories">
+        <div class="categories-header">
+            <h2>Top Company</h2>
+            <p>At eu lobortis pretium tincidunt amet lacus ut aenean aliquet. Blandit a massa elementum id scel...</p>
+        </div>
+
+        <div class="categories-grid">
+
+            <article class="company-card">
+                <!-- Logo de la empresa -->
+                <div class="company-card__logo">
+                  <!-- Normalmente aquí iría la imagen del logo -->
+                  <img src="../img/logos-jobs/instagram.png" alt="Logo de instagram" />
+               
+                  <!-- Nombre de la empresa -->
+                </div>
+                <h3 class="company-card__company">Instagram</h3>
+              
+                <!-- Descripción o texto principal -->
+                <p class="company-card__description">
+                  At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet massa leo
+                </p>
+              
+                <!-- Sección de ofertas de empleo -->
+                <span class="company-card__open-jobs">
+                  8 open jobs
+                </span>
+            </article>
+
+            <article class="company-card">
+                <!-- Logo de la empresa -->
+                <div class="company-card__logo">
+                  <!-- Normalmente aquí iría la imagen del logo -->
+                  <img src="../img/logos-jobs/tesla.png" alt="Logo de Tesla" />
+               
+                  <!-- Nombre de la empresa -->
+                </div>
+                <h3 class="company-card__company">Tesla</h3>
+              
+                <!-- Descripción o texto principal -->
+                <p class="company-card__description">
+                  At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet massa leo
+                </p>
+              
+                <!-- Sección de ofertas de empleo -->
+                <span class="company-card__open-jobs">
+                  18 open jobs
+                </span>
+            </article>
+            <article class="company-card">
+                <!-- Logo de la empresa -->
+                <div class="company-card__logo">
+                  <!-- Normalmente aquí iría la imagen del logo -->
+                  <img src="../img/logos-jobs/mcdonalds.png" alt="Logo de mcdonalds" />
+               
+                  <!-- Nombre de la empresa -->
+                </div>
+                <h3 class="company-card__company">McDonald's</h3>
+              
+                <!-- Descripción o texto principal -->
+                <p class="company-card__description">
+                  At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet massa leo
+                </p>
+              
+                <!-- Sección de ofertas de empleo -->
+                <span class="company-card__open-jobs">
+                  12 open jobs
+                </span>
+            </article>
+            <article class="company-card">
+                <!-- Logo de la empresa -->
+                <div class="company-card__logo">
+                  <!-- Normalmente aquí iría la imagen del logo -->
+                  <img src="../img/logos-jobs/apple.png" alt="Logo de apple" />
+               
+                  <!-- Nombre de la empresa -->
+                </div>
+                <h3 class="company-card__company">Apple</h3>
+              
+                <!-- Descripción o texto principal -->
+                <p class="company-card__description">
+                  At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet massa leo
+                </p>
+              
+                <!-- Sección de ofertas de empleo -->
+                <span class="company-card__open-jobs">
+                  9 open jobs
+                </span>
+            </article>
+        </div>
+    </section>
     
     
 
