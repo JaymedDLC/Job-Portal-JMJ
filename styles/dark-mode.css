@@ -241,10 +241,7 @@ body, .dark-mode, .light, .dark-mode .header, .dark-mode .footer, .dark-mode .re
   
   
   /* Sección de detalles del trabajo */
-  .dark-mode .job-details {
-    background-color: #1e1e1e;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  }
+
   
   .dark-mode .job-details__heading {
     color: #e0e0e0;

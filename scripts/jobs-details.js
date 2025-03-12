@@ -23,7 +23,7 @@ function activarModoOscuro() {
     body.classList.add("dark-mode");
     jobswrapper.classList.add("dark-mode");
     sections.forEach((section, index) => {
-        if (!section.classList.contains("hero") && !section.classList.contains("companies")) {
+        if (!section.classList.contains("home_hero") && !section.classList.contains("no-section")) {
             section.classList.add("dark-mode");
             if (index % 2 != 0) {
                 section.classList.add("light");
