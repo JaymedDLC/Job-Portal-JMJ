@@ -7,11 +7,135 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../styles/about-us.css">
+    <link rel="stylesheet" href="../styles/about/base.css">
+    <link rel="stylesheet" href="../styles/about/header.css">
+    <link rel="stylesheet" href="../styles/about/footer.css">
+    <link rel="stylesheet" href="../styles/about/main.css">
+    <link rel="stylesheet" href="../styles/about/about.css">
+    <link rel="stylesheet" href="../styles/about/contact.css">
     <title>About Us</title>
     <script src="https://kit.fontawesome.com/82bf3eaf6b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container-header">
+            <h1 class="header__logo">Job Portal</h1>
+            <nav>
+                <ul class="header_nav-list">
+
+                    <li class="header__nav-item">
+                        <a href="home.html">Home</a>
+                    </li>
+                    
+                    <li class="header__nav-item">
+                        <a href="jobs.html">Jobs</a>
+                    </li>
+                    
+                    <li class="header__nav-item">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    
+                    <li class="header__nav-item">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn btn-register">Register</a>
+            </div>
+        </div>
+        <!-- Sección principal -->
+        <section class="home__hero">
+            <h1>About Us</h1>            
+        </section>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="about">
+            <div class="container-about">
+                <div class="about__content">
+                    <h2 class="about__title">About Us</h2>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas
+                        fermentum. Nullam nec nisl nec nisl ultricies aliquam. Nulla facilisi. Nulla facilisi. Nulla
+                        facil
+                        isi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla
+                    </p>
+                </div> 
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-grid">
     
+                <!-- Sección de descripción -->
+                <div class="footer-col footer-about">
+                    <h1 class="footer-logo">Job</h1>
+                    <p class="footer-text">
+                        Quis enim pellentesque viverra tellus eget malesuada facilisis. Congue nibh vivamus aliquet nunc
+                        mauris d...
+                    </p>
+    
+                </div>
+    
+                <!-- Sección de la empresa -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">For Candidates</a></li>
+                        <li><a href="#">For Employers</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sección de categorías de trabajo -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Job Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#categorie">Agriculture</a></li>
+                        <li><a href="#categorie">Hotels & Tourism</a></li>
+                        <li><a href="#categorie">Programming</a></li>
+                        <li><a href="#categorie">Education</a></li>
+                        <li><a href="#categorie">Financial Services</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sección de newsletter -->
+                <div class="footer-col newsletter-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-text">
+                        Eu nunc pretium vitae platea. Non netus elementum vulputate
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">Subscribe now</button>
+                    </form>
+                </div>
+    
+            </div>
+    
+            <!-- Políticas -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © Copyright Job Portal 2025. Designed by JMJ Jobs Team
+                </p>
+                <div class="terms-btn">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+    
+            </div>
+    
+        </div>
+    </footer>    
 </body>
 </html>
