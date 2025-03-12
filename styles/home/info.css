@@ -1,0 +1,162 @@
+/* Bloque info */
+.info-section {
+    padding: 60px 20px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-image {
+    width: 100%;
+    height: 400px;
+    background: url('../../img/group-modern-architects.jpg') no-repeat center/cover;
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+}
+
+.info-text {
+    margin-left: 20px;
+}
+
+.info-text p {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.info-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.info-buttons {
+    margin-top: 50px;
+}
+
+.btn-info {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.primary {
+    background: #027373;
+    color: white;
+}
+
+.secondary {
+    background: transparent;
+    color: #027373;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.info-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    margin: 40px auto;
+    text-align: left;
+    max-width: 1200px;
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stat-info h3 {
+    color: #027373;
+    font-size: 50px;
+    font-weight: 550;
+}
+
+/* Bloque Banner */
+.cta-banner {
+    background: url('../../img/people-bussiness.png') no-repeat center/cover;
+    background-size: cover;
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.cta-banner h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .info-container{
+        flex-direction: column;
+    }
+
+    .info-text{
+        margin: 0 20px;
+    }
+
+    .info-text h2{
+        font-size: 30px;
+
+    }
+
+    .info-text p,h2 {
+        text-align: center;
+    }
+
+    .info-text p{
+        font-size: 18px;
+    }
+
+    #learn-more{
+        display: none;
+    }
+
+    .btn-info{
+        width: 100%;
+    }
+
+    .info-stats{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .stat-info h3{
+        font-size: 60px;
+        font-weight: 550;
+    }
+
+    .cta-banner{
+        height: 500px;
+    }
+}
