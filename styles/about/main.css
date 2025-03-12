@@ -1,0 +1,89 @@
+main {
+    width: 100%;
+    padding: 40px 5%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.how-it-works {
+    text-align: center;
+    padding: 60px 5%;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.how-it-works h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.how-it-works p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.step {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.step img {
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.step p {
+    font-size: 0.9rem;
+    color: #444;
+}
