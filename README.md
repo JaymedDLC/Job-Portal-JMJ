@@ -12,8 +12,46 @@
 
 </div>
 
-# Equipo de Desarrollo
+# 👥 Equipo de Desarrollo
 
 - Juan Maestre
 - Fernando Valencia
 - Jaymed Linero
+
+# JMJ Job Portal
+
+Maqueta de un portal de empleos  donde los usuarios pueden buscar ofertas de trabajo, aplicar a vacantes y explorar empresas.
+
+
+## 📸 Capturas de Pantalla
+
+
+
+## 🛠️ Tecnologías Usadas
+
+- **HTML**
+- **CSS**
+- **JavaScript**
+
+
+## 🎨 Modo Oscuro
+
+El portal incluye un **modo oscuro**, activado mediante un botón. Se guarda en `localStorage` para recordar la preferencia del usuario.
+
+
+## 🚀 Cómo Ejecutarlo
+
+1. Clona este repositorio:
+   ```sh
+   git clone https://github.com/tu-usuario/job-portal.git
+   ```
+2. Abre `index.html` en tu navegador.
+3. ¡Disfruta del portal de empleos! 🎉
+
+
+
+## 📜 Licencia
+
+Este proyecto está bajo la licencia MIT. ¡Úsalo como quieras! 🚀
+
+
