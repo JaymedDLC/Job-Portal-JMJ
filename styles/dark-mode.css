@@ -61,90 +61,270 @@ body, .dark-mode, .light, .dark-mode .header, .dark-mode .footer, .dark-mode .re
 }
 
 
-/* DARK MODE CATEGORIES*/
+/*Dark mode job section*/
 
-.dark-mode .categories-header h2,
-.dark-mode .categories-header p,
-.dark-mode .category-card h3,
-.dark-mode .jobs-count {
-    color: #ffffff;
+.dark-mode .home__hero {
+    background: black;
 }
 
-.dark-mode .category-card {
-    background: #121212;
-    box-shadow: 0 4px 6px rgba(21, 21, 21, 0.923);
+
+
+
+
+
+
+/* Dark Mode Styles for Jobs Portal - Reglas Únicas */
+
+/* Header styles */
+.dark-mode .header::before {
+    filter: blur(30px) brightness(0.15);
 }
 
-.dark-mode .categories-icon {
+.dark-mode .container-header {
+    background-color: rgba(18, 18, 18, 0.8);
+}
+
+.dark-mode .btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .btn-register {
+    background-color: #00a884;
+}
+
+.dark-mode .btn-register:hover {
+    background-color: #008064;
+}
+
+.dark-mode #dark-mode-btn {
+    color: #ffd700; /* Color amarillo para el icono en modo oscuro */
+}
+
+/* Sidebar and filters styles */
+
+.jobs__jobs-container {
+    background-color: transparent;
+  }
+
+.dark-mode .jobs__side-bar {
+    background-color: transparent;
+}
+
+.dark-mode .jobs__filters-container {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .filters__title {
+    color: #e0e0e0;
+}
+
+.dark-mode .filters__input-wrapper {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+.dark-mode .filters__input-wrapper input,
+.dark-mode .filters__input-wrapper select {
+    color: #e0e0e0;
+    background-color: transparent;
+}
+
+.dark-mode .filters__checkbox-label {
+    color: #c4c4c4;
+}
+
+.dark-mode .filters__count {
+    background-color: #2a2a2a;
+    color: #c4c4c4;
+}
+
+.dark-mode .jobs-tag {
+    background-color: #2a2a2a;
     color: #00b894;
 }
 
-.dark-mode .jobs-count{
-    background: #5ba59658;
-    color: #fff;
+.dark-mode .button--filters {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
 }
 
-/* DARK MODE INFO SECTION */
-
-
-.dark-mode .info-text h2,
-.dark-mode .info-text p,
-.dark-mode .cta-banner h2 {
-    color: #ffffff;
+/* We Are Hiring section */
+.dark-mode .we-are-hiring {
+    color: white;
 }
 
-.dark-mode .stat-info h3{
+.dark-mode .we-are-hiring::before {
+    filter: blur(50px) brightness(0.4);
+}
+
+/* Main content styles */
+.dark-mode .jobs-wrapper {
+    background-color: #121212;
+}
+
+.dark-mode .job-card h3 {
+    color: #e0e0e0;
+}
+
+.dark-mode .job-card p,
+.dark-mode .job-info span {
+    color: #b0b0b0;
+}
+
+.dark-mode .jobs__sorted-by {
+    color: #c4c4c4;
+}
+
+.dark-mode .jobs__sorted-by-selector select {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+/* Pagination styles */
+.dark-mode .page-button {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+.dark-mode .page-button.active {
+    background-color: #00b894;
+    border-color: transparent;
+}
+
+.dark-mode .page-button:not(.active):hover {
+    background-color: #2a2a2a;
+}
+
+.dark-mode .next-page {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+.dark-mode .next-page:hover {
+    background-color: #2a2a2a;
+}
+
+
+
+
+
+
+
+
+
+
+/* Reglas para el job-details en modo oscuro */
+
+/* Sección del trabajo seleccionado */
+.dark-mode .job__selected {
+    background-color: #1e1e1e;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dark-mode .job__info {
+    color: #b0b0b0;
+  }
+  
+  .dark-mode .job__selected h3 {
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .job__selected p {
+    color: #b0b0b0;
+  }
+
+  
+  
+  /* Sección de detalles del trabajo */
+
+  
+  .dark-mode .job-details__heading {
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .job-details__text {
+    color: #b0b0b0;
+  }
+  
+  .dark-mode .job-details__list {
+    color: #b0b0b0;
+  }
+  
+  .dark-mode .job-details__list-item::before {
+    color: #00b894; /* Color verde para los checks */
+  }
+  
+  .dark-mode .job-details__tag {
+    background-color: #2a2a2a;
     color: #00b894;
-}
-
-
-.dark-mode .btn-info.primary {
-    background: #00b894;
-    color: #ffffff;
-}
-
-.dark-mode .btn-info.secondary {
+  }
+  
+  .dark-mode .job-details__share-label {
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .job-details__share-link {
     color: #00b894;
-}
-
-/* Modo oscuro testimonials */
-.dark-mode .testimonials {
-    color: #ffffff;
-}
-
-.dark-mode .testimonial-card {
-    background: #121212;
-    box-shadow: 0 4px 6px rgba(21, 21, 21, 0.923);
-}
-
-.dark-mode .testimonial-title,
-.dark-mode .testimonial-text,
-.dark-mode .name,
-.dark-mode .role {
-    color: #ffffff;
-}
+  }
+  
 
 
-/* Modo oscuro BLOG */
-.dark-mode .blog-section {
-    color: #ffffff;
-}
-
-.dark-mode .blog-card {
-    background: #121212;
-
-}
-.dark-mode .blog-title,
-.dark-mode .date,
-.dark-mode .read-more a {
-    color: #ffffff;
-}
-
-.dark-mode .badge {
-    background: #00b894;
-}
-
-.dark-mode .arrow-icon {
+  /* Sección de Overview del trabajo */
+  .dark-mode .job-overview__title {
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .job-overview__label {
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .job-overview__value {
+    color: #b0b0b0;
+  }
+  
+  .dark-mode .job-overview__icon {
     color: #00b894;
-}
+  }
+  
+  .dark-mode .job-overview__map {
+    border-color: #444;
+  }
+  
 
+  /* Formulario de contacto */
+  .dark-mode .title--contact {
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .contact-form__input-wrapper {
+    background-color: #2a2a2a;
+    border-color: #444;
+  }
+  
+  .dark-mode .contact-form__icon {
+    color: #00b894;
+  }
+  
+  .dark-mode .contact-form__input,
+  .dark-mode .contact-form__textarea {
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .contact-form__input::placeholder,
+  .dark-mode .contact-form__textarea::placeholder {
+    color: #777;
+  }
+  
+  .dark-mode .contact-form__button {
+    background-color: #00b894;
+  }
+  
+  .dark-mode .contact-form__button:hover {
+    background-color: #019870;
+  }
+  
