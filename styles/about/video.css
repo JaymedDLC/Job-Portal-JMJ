@@ -101,3 +101,116 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .video-container {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .video-wrapper {
+        height: 200px; /* Ajuste de altura */
+    }
+
+    .video-overlay {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .play-button img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .video-info {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .icon {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-section {
+        padding: 0;
+        height: 100vh;
+    }
+
+    .video-container {
+        max-width: 100%;
+        height: 100vh; /* Ocupar toda la pantalla */
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Llenar la pantalla */
+    }
+
+    .background-video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .video-info {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; /* Distribuir el contenido equitativamente */
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 0;
+        height: 150px; /* Ajusta la altura según sea necesario */
+    }
+
+    .info-box {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,75 @@
+.faq-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active {
+    background: #e8f5e9;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Se eliminan reglas específicas para el primer elemento y se aplican a los activos */
+.faq-item.active .faq-question {
+    font-weight: bold;
+    color: #066c3b;
+}
+
+.faq-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #888;
+    margin-right: 10px;
+}
+
+/* Se cambia para que el número sea verde solo en el activo */
+.faq-item.active .faq-number {
+    color: #066c3b;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #888;
+    transition: transform 0.3s ease;
+}
+
+/* Ahora el ícono se resalta en verde solo en el activo */
+.faq-item.active .faq-toggle {
+    color: #066c3b;
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer p {
+    margin: 15px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 150px;
+    padding: 10px 15px;
+}
