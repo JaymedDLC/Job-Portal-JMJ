@@ -92,3 +92,46 @@
     font-size: 0.9rem;
     color: #444;
 }
+
+@media (max-width: 1024px) {
+    .what-is-jmj .container {
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+
+    .what-is-jmj .image {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .steps {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .step {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .steps {
+        grid-template-columns: 1fr; 
+    }
+
+    .how-it-works h2 {
+        font-size: 1.8rem;
+    }
+
+    .how-it-works p {
+        font-size: 0.9rem;
+    }
+
+    .step h3 {
+        font-size: 1rem;
+    }
+
+    .step p {
+        font-size: 0.8rem;
+    }
+}
