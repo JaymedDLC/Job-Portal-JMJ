@@ -132,6 +132,25 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
+#toggle {
+    display: none;
+}
+
+#dark-mode-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#dark-mode-btn.active {
+    color: #ffd700; /* Amarillo dorado */
+    transform: rotate(360deg);
+}
+
 .btn-register {
     background-color: #00b894;
     /* Verde agua */
