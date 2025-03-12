@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../styles/Jobs/jobs__header.css">
+    <link rel="stylesheet" href="../styles/Jobs/jobs__side-bar.css">
+    <link rel="stylesheet" href="../styles/Jobs/jobs__main.css">
+    <link rel="stylesheet" href="../styles/Jobs/jobs__category.css">
+    <link rel="stylesheet" href="../styles/Jobs/jobs__footer.css">
+    
+    <!--link rel="stylesheet" href="../styles/header.css"-->
+
+    <title>Job Portal</title>
+
+    <script src="https://kit.fontawesome.com/82bf3eaf6b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container-header">
+            <h1 class="header__logo">Job Portal</h1>
+            <nav>
+                <ul class="header_nav-list">
+
+                    <li class="header__nav-item">
+                        <a href="home.html">Home</a>
+                    </li>
+                    
+                    <li class="header__nav-item">
+                        <a href="jobs.html">Jobs</a>
+                    </li>
+                    
+                    <li class="header__nav-item">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    
+                    <li class="header__nav-item">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn btn-register">Register</a>
+            </div>
+        </div>
+        <!-- Sección principal -->
+        <section class="home__hero">
+            <h1>Jobs</h1>            
+        </section>
+    </header>
+    <!-- Fin de Header -->
+
+    <!-- MAIN SECTION-->
+    <main class="jobs">
+        <div class="jobs-wrapper">
+
+            <!-- Bloque de filtro-->
+            <div class="jobs__side-bar">
+                
+                <aside class="jobs__filters-container">
+                    <!--Sección Buscar por titulo-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__title">Search by Job Title</h3>
+                        <div class="filters__input-wrapper">
+                            <span class="filters__icon"></span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <!--Sección Buscar por ubicación-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__title">Sort By</h3>
+                        <div class="filters__input-wrapper">
+                            <span class="filters__icon"></span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <select class="filters_location" id="filters-city">
+                                <option value="">Choose city</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Inicio de Category-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__title">Category</h3>
+                        <ul class="filters__list">
+                            <!--Inicio de items-->
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Commerce">
+                                    Commerce
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Commerce" 
+                                    id="Commerce">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Telecomunications">
+                                    Telecomunications
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Telecomunications" 
+                                    id="Telecomunications">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Hotels-Tourism">
+                                    Hotels & Tourism
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Hotels-Tourism" 
+                                    id="Hotels-Tourism">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Education">
+                                    Education
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Education" 
+                                    id="Education">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Financial-Services">
+                                    Financial Services
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Financial-Services" 
+                                    id="Financial-Services">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+                            <!--Fin de items-->
+                        </ul>
+                        <div class="filters__category">
+                            <input type="button" value="Show more">
+                        </div>
+                    </div>
+                    <!--Fin de Category-->
+
+                    <!--Inicio de JobType-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__title">Job Type</h3>
+                        <ul class="filters__list">
+                            <!--Inicio de items-->
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Full-time">
+                                    Full Time
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Full-time" 
+                                    id="Full-time">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Part-time">
+                                    Part Time
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Part-time" 
+                                    id="Part-time">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Freelance">
+                                    Freelance
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Freelance" 
+                                    id="Freelance">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Seasonal">
+                                    Seasonal
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Seasonal" 
+                                    id="Seasonal">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Fixed-Price">
+                                    Fixed Price
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Fixed-Price" 
+                                    id="Fixed-Price">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+                            <!--Fin de items-->
+                        </ul>
+                    </div>
+                    <!--Fin de JobType-->
+
+                    <!--Inicio de Experience Level-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__title">Experience Level</h3>
+                        <ul class="filters__list">
+                            <!--Inicio de items-->
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="No-experience">
+                                    No-experience
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="No-experience" 
+                                    id="No-experience">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Fresher">
+                                    Fresher
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Fresher" 
+                                    id="Fresher">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Intermediate">
+                                    Intermediate
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Intermediate" 
+                                    id="Intermediate">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Expert">
+                                    Expert
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Expert" 
+                                    id="Expert">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+                            <!--Fin de items-->
+                        </ul>
+                    </div>
+                    <!--Fin de Experience Level-->
+
+                    <!--Inicio de Date Posted-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__title">Date Posted</h3>
+                        <ul class="filters__list">
+                            <!--Inicio de items-->
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="All">
+                                    All
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="All" 
+                                    id="All">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Last-Hour">
+                                    Last Hour
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Last-Hour" 
+                                    id="Last-Hour">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Last-24-Hours">
+                                    Last 24 Hours
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Last-24-Hours" 
+                                    id="Last-24-Hours">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Last-7-Days">
+                                    Last 7 Days
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Last-7-Days" 
+                                    id="Last-7-Days">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+
+                            <li class="filters__list-item">
+                                <label class="filters__checkbox-label" for="Last-30-Days">
+                                    Last 30 Days
+                                    <input type="checkbox" 
+                                    class="filters__checkbox"
+                                    name="Last-30-Days" 
+                                    id="Last-30-Days">
+                                </label>
+                                <span class="filters__count">10</span>
+                            </li>
+                            <!--Fin de items-->
+                        </ul>
+                    </div>
+                    <!--Fin de Date Posted-->
+
+                    <!--Inicio de Salary Range-->
+                    <!--Fin de Salary Range-->
+
+                    <!--Inicio de Tags-->
+                    <div class="jobs__filter-section">
+                        <h3 class="filters__title">Tags</h3>
+                        <!--Inicio de items-->
+                        <span class="jobs-tag">engineering</span>
+                        <span class="jobs-tag">design</span>
+                        <span class="jobs-tag">ui/ux</span>
+                        <span class="jobs-tag">marketing</span>
+                        <span class="jobs-tag">management</span>
+                        <span class="jobs-tag">soft</span>
+                        <span class="jobs-tag">construction</span>
+
+                        <!--Fin de items-->
+                    </div>
+                    <!--Fin de Tags-->
+                </aside>
+
+                <!-- Sección "We Are Hiring" al final -->
+                 <div class="ad-container">
+                    <div class="we-are-hiring">
+                        <h3 class="we-are-hiring__title">We Are Hiring</h3>
+                        <p class="we-are-hiring__subtitle">Apply Today!</p>
+                    </div>
+                 </div>
+                
+            </div>
+
+            <!-- Bloque de trabajos disponibles-->
+            <section class="jobs__jobs-container">
+                <!-- Sección de Ofertas Recientes --> 
+                <section class="recent-jobs">
+                    <div class="container-jobs">
+                        <div class="job-list">
+                            <div class="jobs-sorted-container">
+                                <div class="jobs__sorted-by">
+                                    <span>Showing 6-6 of 10 results</span>
+                                </div>
+                                <div class="jobs__sorted-by-selector">
+                                    <select name="sorted-by" id="sorted-by">
+                                        <option value="newest">Latest</option>
+                                        <option value="oldest">Oldest</option>
+                                        <option value="salary">Salary</option>
+                                        <option value="location">Location</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <article class="job-card">
+                                <div class="job-meta">
+                                    <span class="time-label">10 min ago</span>
+                                    <i class="far fa-bookmark save-icon"></i>
+                                </div>
+                                <div class="job-header">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify" class="company-job-logo">
+                                    <div class="job-details">
+                                        <h3>Cybersecurity Director</h3>
+                                        <p>Spotify</p>
+                                    </div>
+                                </div>
+                                <div class="job-info">
+                                    <span><i class="fas fa-music icons"></i> Music & Tech</span>
+                                    <span><i class="fas fa-clock icons"></i> Full time</span>
+                                    <span><i class="fa-solid fa-wallet icons"></i> $120000-$140000</span>
+                                    <span><i class="fas fa-map-marker-alt icons"></i> Stockholm, Sweden</span>
+                                    <button class="job-btn">Job Details</button>
+                                </div>
+                            </article>
+
+                            <article class="job-card">
+                                <div class="job-meta">
+                                    <span class="time-label">12 min ago</span>
+                                    <i class="far fa-bookmark save-icon"></i>
+                                </div>
+                                <div class="job-header">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="company-job-logo">
+                                    <div class="job-details">
+                                        <h3>UI/UX Designer</h3>
+                                        <p>Apple</p>
+                                    </div>
+                                </div>
+                                <div class="job-info">
+                                    <span><i class="fas fa-mobile-alt icons"></i> Technology</span>
+                                    <span><i class="fas fa-clock icons"></i> Part time</span>
+                                    <span><i class="fa-solid fa-wallet icons"></i> $90000-$110000</span>
+                                    <span><i class="fas fa-map-marker-alt icons"></i> Cupertino, USA</span>
+                                    <button class="job-btn">Job Details</button>
+                                </div>
+                            </article>
+
+                            <article class="job-card">
+                                <div class="job-meta">
+                                    <span class="time-label">15 min ago</span>
+                                    <i class="far fa-bookmark save-icon"></i>
+                                </div>
+                                <div class="job-header">
+                                    <img src='https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_"G"_logo.svg' alt="Google" class="company-job-logo">
+                                    <div class="job-details">
+                                        <h3>Cloud Solutions Engineer</h3>
+                                        <p>Google</p>
+                                    </div>
+                                </div>
+                                <div class="job-info">
+                                    <span><i class="fas fa-cloud icons"></i> Cloud Computing</span>
+                                    <span><i class="fas fa-clock icons"></i> Full time</span>
+                                    <span><i class="fa-solid fa-wallet icons"></i> $130000-$150000</span>
+                                    <span><i class="fas fa-map-marker-alt icons"></i> Mountain View, USA</span>
+                                    <button class="job-btn">Job Details</button>
+                                </div>
+                            </article>
+
+                            <article class="job-card">
+                                <div class="job-meta">
+                                    <span class="time-label">24 min ago</span>
+                                    <i class="far fa-bookmark save-icon"></i>
+                                </div>
+                                <div class="job-header">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="company-job-logo">
+                                    <div class="job-details">
+                                        <h3>Software Engineer - AI</h3>
+                                        <p>Microsoft</p>
+                                    </div>
+                                </div>
+                                <div class="job-info">
+                                    <span><i class="fas fa-laptop-code icons"></i> Software Development</span>
+                                    <span><i class="fas fa-clock icons"></i> Full time</span>
+                                    <span><i class="fa-solid fa-wallet icons"></i> $115000-$135000</span>
+                                    <span><i class="fas fa-map-marker-alt icons"></i> Redmond, USA</span>
+                                    <button class="job-btn">Job Details</button>
+                                </div>
+                            </article>
+
+                            <article class="job-card">
+                                <div class="job-meta">
+                                    <span class="time-label">26 min ago</span>
+                                    <i class="far fa-bookmark save-icon"></i>
+                                </div>
+                                <div class="job-header">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" alt="Amazon" class="company-job-logo">
+                                    <div class="job-details">
+                                        <h3>Data Scientist</h3>
+                                        <p>Amazon</p>
+                                    </div>
+                                </div>
+                                <div class="job-info">
+                                    <span><i class="fas fa-chart-line icons"></i> E-commerce & AI</span>
+                                    <span><i class="fas fa-clock icons"></i> Full time</span>
+                                    <span><i class="fa-solid fa-wallet icons"></i> $125000-$145000</span>
+                                    <span><i class="fas fa-map-marker-alt icons"></i> Seattle, USA</span>
+                                    <button class="job-btn">Job Details</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="jobs__pagination">
+                            <!-- Contenedor centrado para los botones de página -->
+                            <div class="page-numbers">
+                              <button class="page-button active" type="button">1</button>
+                              <button class="page-button" type="button">2</button>
+                              <button class="page-button" type="button">3</button>
+                              <!-- Agrega más botones según tus páginas -->
+                            </div>
+                          
+                            <!-- Contenedor del botón "Next", posicionado a la derecha -->
+                            <div class="next-button-container">
+                              <button class="next-page" type="button">Next &raquo;</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                  
+                  
+            </section>
+        </div>
+    </main>
+
+    <!-- Sección de Categorias -->
+    <section id="categorie" class="categories">
+        <div class="categories-header">
+            <h2>Top Company</h2>
+            <p>At eu lobortis pretium tincidunt amet lacus ut aenean aliquet. Blandit a massa elementum id scel...</p>
+        </div>
+
+        <div class="categories-grid">
+
+            <article class="company-card">
+                <!-- Logo de la empresa -->
+                <div class="company-card__logo">
+                  <!-- Normalmente aquí iría la imagen del logo -->
+                  <img src="../img/logos-jobs/instagram.png" alt="Logo de instagram" />
+               
+                  <!-- Nombre de la empresa -->
+                </div>
+                <h3 class="company-card__company">Instagram</h3>
+              
+                <!-- Descripción o texto principal -->
+                <p class="company-card__description">
+                  At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet massa leo
+                </p>
+              
+                <!-- Sección de ofertas de empleo -->
+                <span class="company-card__open-jobs">
+                  8 open jobs
+                </span>
+            </article>
+
+            <article class="company-card">
+                <!-- Logo de la empresa -->
+                <div class="company-card__logo">
+                  <!-- Normalmente aquí iría la imagen del logo -->
+                  <img src="../img/logos-jobs/tesla.png" alt="Logo de Tesla" />
+               
+                  <!-- Nombre de la empresa -->
+                </div>
+                <h3 class="company-card__company">Tesla</h3>
+              
+                <!-- Descripción o texto principal -->
+                <p class="company-card__description">
+                  At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet massa leo
+                </p>
+              
+                <!-- Sección de ofertas de empleo -->
+                <span class="company-card__open-jobs">
+                  18 open jobs
+                </span>
+            </article>
+            <article class="company-card">
+                <!-- Logo de la empresa -->
+                <div class="company-card__logo">
+                  <!-- Normalmente aquí iría la imagen del logo -->
+                  <img src="../img/logos-jobs/mcdonalds.png" alt="Logo de mcdonalds" />
+               
+                  <!-- Nombre de la empresa -->
+                </div>
+                <h3 class="company-card__company">McDonald's</h3>
+              
+                <!-- Descripción o texto principal -->
+                <p class="company-card__description">
+                  At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet massa leo
+                </p>
+              
+                <!-- Sección de ofertas de empleo -->
+                <span class="company-card__open-jobs">
+                  12 open jobs
+                </span>
+            </article>
+            <article class="company-card">
+                <!-- Logo de la empresa -->
+                <div class="company-card__logo">
+                  <!-- Normalmente aquí iría la imagen del logo -->
+                  <img src="../img/logos-jobs/apple.png" alt="Logo de apple" />
+               
+                  <!-- Nombre de la empresa -->
+                </div>
+                <h3 class="company-card__company">Apple</h3>
+              
+                <!-- Descripción o texto principal -->
+                <p class="company-card__description">
+                  At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet massa leo
+                </p>
+              
+                <!-- Sección de ofertas de empleo -->
+                <span class="company-card__open-jobs">
+                  9 open jobs
+                </span>
+            </article>
+        </div>
+    </section>
+    <!-- Fin de Categorias -->
+    
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-grid">
+    
+                <!-- Sección de descripción -->
+                <div class="footer-col footer-about">
+                    <h1 class="footer-logo">Job</h1>
+                    <p class="footer-text">
+                        Quis enim pellentesque viverra tellus eget malesuada facilisis. Congue nibh vivamus aliquet nunc
+                        mauris d...
+                    </p>
+    
+                </div>
+    
+                <!-- Sección de la empresa -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">For Candidates</a></li>
+                        <li><a href="#">For Employers</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sección de categorías de trabajo -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Job Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#categorie">Agriculture</a></li>
+                        <li><a href="#categorie">Hotels & Tourism</a></li>
+                        <li><a href="#categorie">Programming</a></li>
+                        <li><a href="#categorie">Education</a></li>
+                        <li><a href="#categorie">Financial Services</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sección de newsletter -->
+                <div class="footer-col newsletter-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-text">
+                        Eu nunc pretium vitae platea. Non netus elementum vulputate
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">Subscribe now</button>
+                    </form>
+                </div>
+    
+            </div>
+    
+            <!-- Políticas -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © Copyright Job Portal 2025. Designed by JMJ Jobs Team
+                </p>
+                <div class="terms-btn">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+    
+            </div>
+    
+        </div>
+    </footer>
+
+
+      
+
+</body>
+
+</html>
