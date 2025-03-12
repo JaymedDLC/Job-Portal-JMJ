@@ -109,17 +109,21 @@
         margin-bottom: 1.5rem;
     }
 
-.filters__category input{
+.filters__category input, .button--filters{
     padding: 15px;
     width: 100%;
     border-radius: 8px;
     border-style: none;
-    background-color: #00b894;
+    background-color: #309689;
     color: white;
     margin-top: 5px;
 }
 
-.filters__category input:hover {
+.button--filters {
+    display: none;
+}
+
+.filters__category input:hover, .button--filters:hover {
     background-color: #019870;
     cursor: pointer;
     /* Verde más oscuro */
@@ -243,6 +247,11 @@
     order: 1; /* Asegura que aparezca primero */
     margin-bottom: 30px;
   }
+
+  .button--filters {
+    display: block; /*Aparece el boton en resoluciones mas pequeñas*/
+    margin: 30px 0;
+}
   
   .jobs__jobs-container {
     width: 100%; /* Ocupa ancho completo */
