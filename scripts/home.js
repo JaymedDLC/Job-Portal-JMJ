@@ -45,3 +45,11 @@ function desactivarModoOscuro() {
     darkModeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
     localStorage.setItem("dark-mode", "disabled");
 }
+
+document.querySelector('.search-btn').addEventListener('click', function() {
+    window.location.href = 'jobs.html';
+});
+
+document.querySelector('.job-btn').addEventListener('click', function() {
+    window.location.href = 'job-details.html';
+});
