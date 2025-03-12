@@ -43,7 +43,7 @@
   }
   
   /* Título de cada sección */
-  .filters__tittle {
+  .filters__title {
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
@@ -124,14 +124,6 @@
     /* Verde más oscuro */
 }
 
-/* Título de la sección (Category, Job Type, etc.) */
-.filters__tittle {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
-
 /* Quitar estilos de lista por defecto */
 .filters__list {
     list-style: none;
@@ -178,7 +170,7 @@
   }
 
 
-.jobs-count {
+.jobs-tag {
     display: inline-block;
     background: #30968915;
     padding: 5px 10px;
