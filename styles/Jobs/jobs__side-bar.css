@@ -86,6 +86,7 @@
     color: #aaa;
   }
   
+  
   /* Estilo para el select */
   .filters__input-wrapper select {
     flex: 1;
@@ -225,3 +226,39 @@
 }
 
 /*End Hiring section*
+
+/* Media query para dispositivos pequeños */
+@media (max-width: 480px) {
+  .jobs-wrapper {
+    flex-direction: column; /* Cambia de row a column */
+    padding: 20px 25px; /* Reduce padding en móviles */
+    max-width: 100%;
+    margin-bottom: 70px;
+  }
+  
+  .jobs__side-bar {
+    max-width: 100%; /* Ocupa el ancho completo */
+    width: 100%;
+    min-width: 350px;
+    order: 1; /* Asegura que aparezca primero */
+    margin-bottom: 30px;
+  }
+  
+  .jobs__jobs-container {
+    width: 100%; /* Ocupa ancho completo */
+    margin-left: 0; /* Elimina margen izquierdo */
+    order: 2; /* Aparece después del sidebar */
+  }
+  
+  .jobs__filters-container {
+    max-width: 100%; /* Ajusta el ancho máximo */
+  }
+
+  .ad-container {
+    margin-top: 20px;
+  }
+  
+  .we-are-hiring {
+    height: clamp(200px, 40vh, 400px); /* Reduce altura en móviles */
+  }
+}
