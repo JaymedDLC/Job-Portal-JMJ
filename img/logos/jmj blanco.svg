@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16.577948mm"
+   height="7.119648mm"
+   viewBox="0 0 16.577948 7.119648"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="170.50932"
+       y="446.57202"
+       width="111.64301"
+       height="93.374153"
+       id="rect8" />
+    <rect
+       x="170.50932"
+       y="446.57202"
+       width="111.64301"
+       height="93.374153"
+       id="rect9" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-45.930698,-128.67628)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,0.59961675,8.5316033)"
+       id="text6"
+       style="font-size:37.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect8);display:inline;fill:#ffffff;fill-opacity:1;stroke-width:1.00157;stroke-dasharray:none"><tspan
+         x="170.50977"
+         y="480.63257"
+         id="tspan2"><tspan
+           style="font-weight:600;font-family:Roboto;-inkscape-font-specification:'Roboto Semi-Bold'"
+           id="tspan1">J</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(-0.26458333,0,0,0.26458333,107.83973,8.5320906)"
+       id="text7"
+       style="font-size:37.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect9);display:inline;fill:#ffffff;fill-opacity:1;stroke-width:1.00157;stroke-dasharray:none"><tspan
+         x="170.50977"
+         y="480.63257"
+         id="tspan4"><tspan
+           style="font-weight:600;font-family:Roboto;-inkscape-font-specification:'Roboto Semi-Bold'"
+           id="tspan3">J</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Semi-Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#309689;fill-opacity:1;stroke-width:0.264999;stroke-dasharray:none"
+       x="49.905113"
+       y="135.69876"
+       id="text8"><tspan
+         id="tspan8"
+         style="font-size:9.87778px;fill:#309689;fill-opacity:1;stroke-width:0.265"
+         x="49.905113"
+         y="135.69876">M</tspan></text>
+  </g>
+</svg>
