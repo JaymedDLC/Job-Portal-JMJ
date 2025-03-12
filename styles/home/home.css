@@ -425,7 +425,7 @@ span {
 
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -669,12 +669,14 @@ span {
     margin-top: 15px;
 }
 
-/* Imagen del cliente */
+
 .avatar {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     margin-right: 10px;
+    object-fit: cover; 
+    object-position: center;
 }
 
 .name {
