@@ -206,7 +206,7 @@
   left: 0;
   width: 110%;
   height: 110%;
-  background: url('../../img/banner.png') no-repeat center/cover;
+  background: url('../../img/logos-jobs/banner.png') no-repeat center/cover;
   background-size: cover;
   filter: blur(50px) brightness(0.6);
   transform: scale(1.1);
