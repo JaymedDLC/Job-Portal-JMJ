@@ -1,25 +1,3 @@
-.faq-section {
-    background: #ffffff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.faq-subtitle {
-    color: #777;
-    font-size: 1rem;
-    margin-bottom: 30px;
-}
-
 .faq-item {
     background: #fff;
     border: 1px solid #ddd;
@@ -29,7 +7,7 @@ h2 {
     transition: all 0.3s ease;
 }
 
-.faq-item:first-child {
+.faq-item.active {
     background: #e8f5e9;
 }
 
@@ -47,7 +25,8 @@ h2 {
     transition: background 0.3s ease;
 }
 
-.faq-item:first-child .faq-question {
+/* Se eliminan reglas específicas para el primer elemento y se aplican a los activos */
+.faq-item.active .faq-question {
     font-weight: bold;
     color: #066c3b;
 }
@@ -59,19 +38,22 @@ h2 {
     margin-right: 10px;
 }
 
-.faq-item:first-child .faq-number {
+/* Se cambia para que el número sea verde solo en el activo */
+.faq-item.active .faq-number {
     color: #066c3b;
 }
 
 .faq-toggle {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #066c3b;
+    color: #888;
     transition: transform 0.3s ease;
 }
 
-.faq-item:first-child .faq-toggle {
+/* Ahora el ícono se resalta en verde solo en el activo */
+.faq-item.active .faq-toggle {
     color: #066c3b;
+    transform: rotate(45deg);
 }
 
 .faq-answer {
@@ -90,8 +72,4 @@ h2 {
 .faq-item.active .faq-answer {
     max-height: 150px;
     padding: 10px 15px;
-}
-
-.faq-item.active .faq-toggle {
-    transform: rotate(45deg);
 }
