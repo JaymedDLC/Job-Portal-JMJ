@@ -1,0 +1,150 @@
+body, .dark-mode, .light, .dark-mode .header, .dark-mode .footer, .dark-mode .recent-jobs, .dark-mode .job-card, .dark-mode .categories-header h2, .dark-mode .categories-header p, .dark-mode .category-card h3, .dark-mode .jobs-count, .dark-mode .category-card, .dark-mode .categories-icon, .dark-mode .info-text h2, .dark-mode .info-text p, .dark-mode .cta-banner h2, .dark-mode .stat-info h3, .dark-mode .btn-info.primary, .dark-mode .btn-info.secondary, .dark-mode .testimonials, .dark-mode .testimonial-card, .dark-mode .testimonial-title, .dark-mode .testimonial-text, .dark-mode .name, .dark-mode .role, .dark-mode .blog-section, .dark-mode .blog-card, .dark-mode .blog-title, .dark-mode .date, .dark-mode .read-more a, .dark-mode .badge, .dark-mode .arrow-icon {
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.light{
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode .header,
+.dark-mode .footer,
+.dark-mode .recent-jobs,
+.dark-mode .job-card {
+
+    color: #ffffff;
+}
+
+.dark-mode .view-all,
+.dark-mode .view-all-down {
+    color: #00b894;
+}
+
+.dark-mode .job-card {
+    background-color: #1e1e1e;
+    box-shadow: 0px 4px 10px rgba(11, 11, 11, 0.819);
+}
+
+.dark-mode .save-icon {
+    color: #ffffff;
+}
+
+.dark-mode .save-icon:hover {
+    color: #00b894;
+}
+
+.dark-mode .time-label {
+    background: #5ba59658;
+    color: #ffffff;
+}
+
+.dark-mode .job-info {
+    color: #cacaca;
+}
+
+.dark-mode .job-btn {
+    background: #00b894;
+    color: #ffffff;
+}
+
+.dark-mode .job-btn:hover {
+    background: #019870;
+}
+
+.dark-mode .icons {
+    color: #00b894;
+}
+
+
+/* DARK MODE CATEGORIES*/
+
+.dark-mode .categories-header h2,
+.dark-mode .categories-header p,
+.dark-mode .category-card h3,
+.dark-mode .jobs-count {
+    color: #ffffff;
+}
+
+.dark-mode .category-card {
+    background: #121212;
+    box-shadow: 0 4px 6px rgba(21, 21, 21, 0.923);
+}
+
+.dark-mode .categories-icon {
+    color: #00b894;
+}
+
+.dark-mode .jobs-count{
+    background: #5ba59658;
+    color: #fff;
+}
+
+/* DARK MODE INFO SECTION */
+
+
+.dark-mode .info-text h2,
+.dark-mode .info-text p,
+.dark-mode .cta-banner h2 {
+    color: #ffffff;
+}
+
+.dark-mode .stat-info h3{
+    color: #00b894;
+}
+
+
+.dark-mode .btn-info.primary {
+    background: #00b894;
+    color: #ffffff;
+}
+
+.dark-mode .btn-info.secondary {
+    color: #00b894;
+}
+
+/* Modo oscuro testimonials */
+.dark-mode .testimonials {
+    color: #ffffff;
+}
+
+.dark-mode .testimonial-card {
+    background: #121212;
+    box-shadow: 0 4px 6px rgba(21, 21, 21, 0.923);
+}
+
+.dark-mode .testimonial-title,
+.dark-mode .testimonial-text,
+.dark-mode .name,
+.dark-mode .role {
+    color: #ffffff;
+}
+
+
+/* Modo oscuro BLOG */
+.dark-mode .blog-section {
+    color: #ffffff;
+}
+
+.dark-mode .blog-card {
+    background: #121212;
+
+}
+.dark-mode .blog-title,
+.dark-mode .date,
+.dark-mode .read-more a {
+    color: #ffffff;
+}
+
+.dark-mode .badge {
+    background: #00b894;
+}
+
+.dark-mode .arrow-icon {
+    color: #00b894;
+}
+
