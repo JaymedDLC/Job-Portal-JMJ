@@ -2,6 +2,7 @@
 .recent-jobs {
     padding: 40px;
     background-color: #fff;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .container-jobs {
@@ -137,6 +138,8 @@ span {
     margin-right: 10px;
     vertical-align: middle;
 }
+
+
 
 @media (max-width: 480px) {
     .container-jobs{

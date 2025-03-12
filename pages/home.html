@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../styles/home/testimonials.css">
     <link rel="stylesheet" href="../styles/home/blog.css">
     <link rel="stylesheet" href="../styles/home/footer.css">
+    <link rel="stylesheet" href="../styles/home/dark-mode.css">
 
     <title>Job Portal</title>
     <script src="https://kit.fontawesome.com/82bf3eaf6b.js" crossorigin="anonymous"></script>
@@ -38,6 +39,8 @@
                 <div class="auth-buttons">
                     <a href="login.html" class="btn">Login</a>
                     <a href="register.html" class="btn btn-register">Register</a>
+                    <label for="toggle" id="dark-mode-btn"><i class="fa-solid fa-moon"></i></label>
+                    <input type="checkbox" name="" id="toggle">
                 </div>
             </div>
         </header>
@@ -322,7 +325,7 @@
     </section>
 
     <!-- Sección de Testimonios -->
-    <section class="testimonials">
+    <section class="testimonials ">
         <div class="container-testimonials">
             <h2 class="title-testimonial">Testimonials from Our Customers</h2>
             <p class="subtitle-testimonials">
@@ -402,7 +405,7 @@
     </section>
 
     <!-- Seccion Blog -->
-    <section class="blog-section">
+    <section class="blog-section ">
         <div class="container-blog">
             <div class="blog-header">
                 <h2 class="title-blog-section">News and Blog</h2>
@@ -471,6 +474,7 @@
         </div>
     </section>
 
+    <script src="../scripts/home.js"></script>
 </body>
 
 <footer class="footer">
