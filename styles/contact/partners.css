@@ -1,0 +1,29 @@
+/* Partners Section Styles */
+.partners-section {
+    background-color: #FFFFFF;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.partners-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner-logo {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+}
