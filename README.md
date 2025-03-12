@@ -15,7 +15,7 @@
 # 👥 Equipo de Desarrollo
 
 - Juan Maestre
-- Fernando Valencia
+- Fernando Mateo Valencia
 - Jaymed Linero
 
 # JMJ Job Portal
