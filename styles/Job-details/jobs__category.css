@@ -1,0 +1,123 @@
+/* Sección Categorias */
+.categories {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #eaf4f2;
+}
+
+.categories-header h2 {
+    font-size: 50px;
+}
+
+.categories-header p {
+    color: #666;
+    padding: 40px;
+    margin-bottom: 10px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.company-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    min-height: 360px;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(95, 95, 95, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+}
+
+.company-card__logo{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.company-card__logo img {
+    width: 55%;
+    height: 55%;
+    object-fit: fill;
+    
+}
+
+
+.company-card__company{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.company-card__open-jobs {
+    display: inline-block;
+    width: fit-content;         /* Ocupa solo el ancho necesario */  
+    background: #eaf4f2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: normal;
+    color: #027373;
+    margin: 20px auto;
+}
+
+
+/*jobs-category ends*/
+
+/*jobs-category queries*/
+@media  (max-width: 480px) {
+    .categories-header h2 {
+        font-size: 30px;
+    }
+
+    .categories-header p {
+        font-size: 14px; 
+        padding: 20px; 
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+        gap: 10px; 
+    }
+
+    .company-card {
+        padding: 15px; /* Ajustar el padding */
+        border-radius: 15px; /* Ajustar el border-radius */
+        box-shadow: 0 2px 4px rgba(95, 95, 95, 0.1); /* Ajustar el box-shadow */
+    }
+
+    .company-card__company {
+        font-size: 1rem; /* Ajustar el tamaño del título */
+        margin-top: 10px; /* Ajustar el margin-top */
+        margin-bottom: 10px; /* Ajustar el margin-bottom */
+    }
+
+    .company-card__open-jobs {
+        font-size: 14px; /* Ajustar el tamaño del texto */
+        padding: 3px 8px; /* Ajustar el padding */
+        margin-top: 10px; /* Ajustar el margin-top */
+        margin-bottom: 10px; /* Ajustar el margin-bottom */
+    }
+}
+/*jobs-category queries ends*/
