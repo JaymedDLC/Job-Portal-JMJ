@@ -101,3 +101,40 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .video-container {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .video-wrapper {
+        height: 200px; /* Ajuste de altura */
+    }
+
+    .video-overlay {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .play-button img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .video-info {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .icon {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 13px;
+    }
+}
