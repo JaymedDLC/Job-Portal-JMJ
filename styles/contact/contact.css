@@ -93,3 +93,20 @@
         text-align: center;
     }
 }
+
+@media (max-width: 640px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .mobile-menu-btn {
+      display: block;
+    }
+  
+    .contact-form-container {
+      padding: 0;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 90%;
+    }
+  }
