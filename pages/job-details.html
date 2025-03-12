@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../styles/Job-details/jobs-details__side-bar.css">
     <link rel="stylesheet" href="../styles/Job-details/jobs-details__main.css">
     <link rel="stylesheet" href="../styles/Job-details/jobs-details__footer.css">
+    <link rel="stylesheet" href="../styles/Job-details/job-details__darkmode.css">
     
     
     <!--link rel="stylesheet" href="../styles/header.css"-->
@@ -51,6 +52,8 @@
             <div class="auth-buttons">
                 <a href="login.html" class="btn">Login</a>
                 <a href="register.html" class="btn btn-register">Register</a>
+                <label for="toggle" id="dark-mode-btn"><i class="fa-solid fa-moon"></i></label>
+                <input type="checkbox" name="" id="toggle">
             </div>
         </div>
         <!-- Sección principal -->
@@ -375,7 +378,7 @@
                     <!-- Sección de mapa (o imagen/iframe) -->
                     <div class="job-overview__map">
                       <!-- Aquí puedes usar una imagen estática o un iframe de Google Maps -->
-                      <img src="images/map-example.png" alt="Map location" loading="lazy">
+                      <img src="../img/logos-jobs/map.png" alt="Map location" loading="lazy">
                     </div>
                   </aside>
                 
@@ -468,78 +471,74 @@
 
         </div>
     </main>
-    
-    <!--Footer-->
-    <footer class="footer">
-        <div class="container-footer">
-            <div class="footer-grid">
-    
-                <!-- Sección de descripción -->
-                <div class="footer-col footer-about">
-                    <h1 class="footer-logo">Job</h1>
-                    <p class="footer-text">
-                        Quis enim pellentesque viverra tellus eget malesuada facilisis. Congue nibh vivamus aliquet nunc
-                        mauris d...
-                    </p>
-    
-                </div>
-    
-                <!-- Sección de la empresa -->
-                <div class="footer-col">
-                    <h3 class="footer-title">Company</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">For Candidates</a></li>
-                        <li><a href="#">For Employers</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Sección de categorías de trabajo -->
-                <div class="footer-col">
-                    <h3 class="footer-title">Job Categories</h3>
-                    <ul class="footer-links">
-                        <li><a href="#categorie">Agriculture</a></li>
-                        <li><a href="#categorie">Hotels & Tourism</a></li>
-                        <li><a href="#categorie">Programming</a></li>
-                        <li><a href="#categorie">Education</a></li>
-                        <li><a href="#categorie">Financial Services</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Sección de newsletter -->
-                <div class="footer-col newsletter-section">
-                    <h3 class="footer-title">Newsletter</h3>
-                    <p class="footer-text">
-                        Eu nunc pretium vitae platea. Non netus elementum vulputate
-                    </p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Email Address" required>
-                        <button type="submit">Subscribe now</button>
-                    </form>
-                </div>
-    
-            </div>
-    
-            <!-- Políticas -->
-            <div class="footer-bottom">
-                <p class="copyright">
-                    © Copyright Job Portal 2025. Designed by JMJ Jobs Team
-                </p>
-                <div class="terms-btn">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                </div>
-    
-            </div>
-    
-        </div>
-    </footer>
-
-
-      
-
+    <script src="../scripts/jobs-details.js"></script>
 </body>
 
+<!--Footer-->
+<footer class="footer">
+    <div class="container-footer">
+        <div class="footer-grid">
+
+            <!-- Sección de descripción -->
+            <div class="footer-col footer-about">
+                <h1 class="footer-logo">Job</h1>
+                <p class="footer-text">
+                    Quis enim pellentesque viverra tellus eget malesuada facilisis. Congue nibh vivamus aliquet nunc
+                    mauris d...
+                </p>
+
+            </div>
+
+            <!-- Sección de la empresa -->
+            <div class="footer-col">
+                <h3 class="footer-title">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">For Candidates</a></li>
+                    <li><a href="#">For Employers</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección de categorías de trabajo -->
+            <div class="footer-col">
+                <h3 class="footer-title">Job Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="#categorie">Agriculture</a></li>
+                    <li><a href="#categorie">Hotels & Tourism</a></li>
+                    <li><a href="#categorie">Programming</a></li>
+                    <li><a href="#categorie">Education</a></li>
+                    <li><a href="#categorie">Financial Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección de newsletter -->
+            <div class="footer-col newsletter-section">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="footer-text">
+                    Eu nunc pretium vitae platea. Non netus elementum vulputate
+                </p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit">Subscribe now</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Políticas -->
+        <div class="footer-bottom">
+            <p class="copyright">
+                © Copyright Job Portal 2025. Designed by JMJ Jobs Team
+            </p>
+            <div class="terms-btn">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
 </html>
