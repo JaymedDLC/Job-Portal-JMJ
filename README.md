@@ -11,3 +11,9 @@
 [![GitHub FernandoMVG](https://img.shields.io/badge/by-FernandoMVG-purple)]((https://github.com/FernandoMVG))
 
 </div>
+
+# Equipo de Desarrollo
+
+- Juan Maestre
+- Fernando Valencia
+- Jaymed Linero
