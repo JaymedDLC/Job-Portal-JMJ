@@ -246,3 +246,112 @@
   }
   
 /*Fin de paginación*/
+
+/* Media queries para el contenido principal */
+@media (max-width: 768px) {
+  /* Sección de ordenamiento */
+  .jobs-sorted-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .jobs__sorted-by {
+    flex: 1; /* Toma el espacio disponible */
+    min-width: 180px; /* Ancho mínimo */
+    font-size: 14px; /* Reducir tamaño de fuente */
+  }
+  
+  .jobs__sorted-by-selector {
+    flex-shrink: 0; /* No se reduce */
+    width: auto; /* Ancho automático */
+  }
+  
+  .jobs__sorted-by-selector select {
+    width: auto; /* Ancho automático */
+    min-width: 120px; /* Ancho mínimo reducido */
+  }
+  
+  /* Job cards */
+  .job-card {
+    padding: 20px;
+  }
+  
+  .job-card h3 {
+    font-size: 24px;
+    margin-bottom: 3px;
+  }
+  
+  .job-card p, .job-card span {
+    font-size: 16px;
+  }
+  
+  /* Información del trabajo */
+  .job-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .job-info span {
+    display: block;
+    width: 100%;
+  }
+  
+  .job-btn {
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+  
+
+}
+
+/* Para dispositivos muy pequeños */
+@media (max-width: 480px) {
+  .container-jobs {
+    padding: 15px;
+    margin: 0;
+  }
+  
+  .job-meta {
+    margin-bottom: 5px;
+  }
+  
+  .job-header {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .job-card h3 {
+    font-size: 20px;
+  }
+  
+  .job-card p, .job-card span {
+    font-size: 14px;
+  }
+  
+  .time-label {
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+  
+  .company-job-logo {
+    width: 32px;
+    height: 32px;
+  }
+  
+  /* Reducir los botones de paginación */
+  .page-button {
+    min-width: 28px;
+    height: 28px;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+  
+  .next-page {
+    height: 28px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+}

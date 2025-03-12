@@ -21,6 +21,7 @@
     flex-direction: row;
     max-width: 100%;
     margin-bottom: 70px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 /*Filters*/
@@ -86,6 +87,7 @@
     color: #aaa;
   }
   
+  
   /* Estilo para el select */
   .filters__input-wrapper select {
     flex: 1;
@@ -108,17 +110,21 @@
         margin-bottom: 1.5rem;
     }
 
-.filters__category input{
+.filters__category input, .button--filters{
     padding: 15px;
     width: 100%;
     border-radius: 8px;
     border-style: none;
-    background-color: #00b894;
+    background-color: #309689;
     color: white;
     margin-top: 5px;
 }
 
-.filters__category input:hover {
+.button--filters {
+    display: none;
+}
+
+.filters__category input:hover, .button--filters:hover {
     background-color: #019870;
     cursor: pointer;
     /* Verde más oscuro */
@@ -205,7 +211,7 @@
   left: 0;
   width: 110%;
   height: 110%;
-  background: url('../../img/banner.png') no-repeat center/cover;
+  background: url('../../img/logos-jobs/banner.png') no-repeat center/cover;
   background-size: cover;
   filter: blur(50px) brightness(0.6);
   transform: scale(1.1);
@@ -225,3 +231,44 @@
 }
 
 /*End Hiring section*
+
+/* Media query para dispositivos pequeños */
+@media (max-width: 480px) {
+  .jobs-wrapper {
+    flex-direction: column; /* Cambia de row a column */
+    padding: 20px 25px; /* Reduce padding en móviles */
+    max-width: 100%;
+    margin-bottom: 70px;
+  }
+  
+  .jobs__side-bar {
+    max-width: 100%; /* Ocupa el ancho completo */
+    width: 100%;
+    min-width: 350px;
+    order: 1; /* Asegura que aparezca primero */
+    margin-bottom: 30px;
+  }
+
+  .button--filters {
+    display: block; /*Aparece el boton en resoluciones mas pequeñas*/
+    margin: 30px 0;
+}
+  
+  .jobs__jobs-container {
+    width: 100%; /* Ocupa ancho completo */
+    margin-left: 0; /* Elimina margen izquierdo */
+    order: 2; /* Aparece después del sidebar */
+  }
+  
+  .jobs__filters-container {
+    max-width: 100%; /* Ajusta el ancho máximo */
+  }
+
+  .ad-container {
+    margin-top: 20px;
+  }
+  
+  .we-are-hiring {
+    height: clamp(200px, 40vh, 400px); /* Reduce altura en móviles */
+  }
+}

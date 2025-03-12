@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="../img/logos/jmj blanco.svg" type="image/svg+xml">
+
     <!-- Estilos -->
     <link rel="stylesheet" href="../styles/Jobs/jobs__header.css">
     <link rel="stylesheet" href="../styles/Jobs/jobs__side-bar.css">
     <link rel="stylesheet" href="../styles/Jobs/jobs__main.css">
     <link rel="stylesheet" href="../styles/Jobs/jobs__category.css">
     <link rel="stylesheet" href="../styles/Jobs/jobs__footer.css">
+    <link rel="stylesheet" href="../styles/Jobs/jobs__dark-mode.css">
     
     <!--link rel="stylesheet" href="../styles/header.css"-->
 
@@ -27,7 +28,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container-header">
-            <h1 class="header__logo"><img src="../img/logos/jmj blanco.svg" alt="JMJ LOGO"></h1>
+            <h1 class="header__logo">Job Portal</h1>
             <nav>
                 <ul class="header_nav-list">
 
@@ -51,6 +52,8 @@
             <div class="auth-buttons">
                 <a href="login.html" class="btn">Login</a>
                 <a href="register.html" class="btn btn-register">Register</a>
+                <label for="toggle" id="dark-mode-btn"><i class="fa-solid fa-moon"></i></label>
+                <input type="checkbox" name="" id="toggle">
             </div>
         </div>
         <!-- Sección principal -->
@@ -62,12 +65,20 @@
 
     <!-- MAIN SECTION-->
     <main class="jobs">
-        <div class="jobs-wrapper">
+        <div class="jobs-wrapper" id="jobs-wrapper">
 
             <!-- Bloque de filtro-->
             <div class="jobs__side-bar">
+
+                <!--Boton de filtro: solamente en movil-->
+                <button class="button button--filters">
+                    <span class="button__text">Filters</span>
+                    <span class="button__icon">
+                        <i class="fa-solid fa-sliders"></i>
+                    </span>
+                  </button>
                 
-                <aside class="jobs__filters-container">
+                <aside class="jobs__filters-container" id="aside-jobs">
                     <!--Sección Buscar por titulo-->
                     <div class="jobs__filter-section">
                         <h3 class="filters__title">Search by Job Title</h3>
@@ -608,77 +619,77 @@
     </section>
     <!-- Fin de Categorias -->
     
-    <!--Footer-->
-    <footer class="footer">
-        <div class="container-footer">
-            <div class="footer-grid">
     
-                <!-- Sección de descripción -->
-                <div class="footer-col footer-about">
-                    <h1 class="footer-logo"><img src="../img/logos/jmj blanco.svg" alt="JMJ LOGO"></h1>
-                    <p class="footer-text">
-                        Quis enim pellentesque viverra tellus eget malesuada facilisis. Congue nibh vivamus aliquet nunc
-                        mauris d...
-                    </p>
     
-                </div>
     
-                <!-- Sección de la empresa -->
-                <div class="footer-col">
-                    <h3 class="footer-title">Company</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">For Candidates</a></li>
-                        <li><a href="#">For Employers</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Sección de categorías de trabajo -->
-                <div class="footer-col">
-                    <h3 class="footer-title">Job Categories</h3>
-                    <ul class="footer-links">
-                        <li><a href="#categorie">Agriculture</a></li>
-                        <li><a href="#categorie">Hotels & Tourism</a></li>
-                        <li><a href="#categorie">Programming</a></li>
-                        <li><a href="#categorie">Education</a></li>
-                        <li><a href="#categorie">Financial Services</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Sección de newsletter -->
-                <div class="footer-col newsletter-section">
-                    <h3 class="footer-title">Newsletter</h3>
-                    <p class="footer-text">
-                        Eu nunc pretium vitae platea. Non netus elementum vulputate
-                    </p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Email Address" required>
-                        <button type="submit">Subscribe now</button>
-                    </form>
-                </div>
-    
-            </div>
-    
-            <!-- Políticas -->
-            <div class="footer-bottom">
-                <p class="copyright">
-                    © Copyright Job Portal 2025. Designed by JMJ Jobs Team
-                </p>
-                <div class="terms-btn">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                </div>
-    
-            </div>
-    
-        </div>
-    </footer>
-
-
-      
-
+    <script src="../scripts/jobs.js"></script>
 </body>
+<!--Footer-->
+<footer class="footer">
+    <div class="container-footer">
+        <div class="footer-grid">
+
+            <!-- Sección de descripción -->
+            <div class="footer-col footer-about">
+                <h1 class="footer-logo">Job</h1>
+                <p class="footer-text">
+                    Quis enim pellentesque viverra tellus eget malesuada facilisis. Congue nibh vivamus aliquet nunc
+                    mauris d...
+                </p>
+
+            </div>
+
+            <!-- Sección de la empresa -->
+            <div class="footer-col">
+                <h3 class="footer-title">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">For Candidates</a></li>
+                    <li><a href="#">For Employers</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección de categorías de trabajo -->
+            <div class="footer-col">
+                <h3 class="footer-title">Job Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="#categorie">Agriculture</a></li>
+                    <li><a href="#categorie">Hotels & Tourism</a></li>
+                    <li><a href="#categorie">Programming</a></li>
+                    <li><a href="#categorie">Education</a></li>
+                    <li><a href="#categorie">Financial Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección de newsletter -->
+            <div class="footer-col newsletter-section">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="footer-text">
+                    Eu nunc pretium vitae platea. Non netus elementum vulputate
+                </p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit">Subscribe now</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Políticas -->
+        <div class="footer-bottom">
+            <p class="copyright">
+                © Copyright Job Portal 2025. Designed by JMJ Jobs Team
+            </p>
+            <div class="terms-btn">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
 
 </html>
