@@ -1,0 +1,275 @@
+/*Inicio Main Section*/
+
+.jobs__side-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre filtros y We Are Hiring */
+    background-color: transparent; /*color de fondo*/
+    max-height: 100%;
+    max-width: 350px;
+  }
+  
+  .jobs-wrapper {
+      margin: 0;
+      padding: 40px 50px;
+      background-color: #FFFFFF; /*Color de fondo del "main"*/
+      display: flex;
+      flex-direction: row;
+      max-width: 100%;
+      margin-bottom: 70px;
+  }
+  
+  /*Filters*/
+  /* Contenedor general de los filtros */
+  
+  .jobs__filters-container {
+      /* Color de fondo aproximado al de la imagen */
+      background-color: #EBF5F4; 
+      padding: 1.5rem;
+      border-radius: 8px;
+      /* Para que la sección no ocupe todo el ancho (opcional) */
+      max-width: 300px; 
+      flex-grow: 0;
+      
+    }
+    
+    /* Sección individual de cada filtro (buscar por título, ubicación, etc.) */
+    .jobs__filter-section {
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Título de cada sección */
+    .filters__title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    
+    .jobs__jobs-container {
+      flex-grow: 3;
+      padding: 0px;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+    
+      /* Espaciado general entre secciones de filtros */
+      .jobs__filter-section {
+          margin-bottom: 1.5rem;
+      }
+
+    /* Contenedor principal */
+.job-overview {
+    background-color: #EAF5F4; /* Fondo suave */
+    padding: 1.5rem;
+    border-radius: 12px;       /* Bordes redondeados */
+    max-width: 350px;          /* Ancho máximo, ajústalo según necesites */
+    margin: 0 auto;            /* Centra el contenedor */
+    color: #333;
+  }
+  
+  /* Título de la sección */
+  .job-overview__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Lista de detalles */
+  .job-overview__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* Espacio vertical entre items */
+  }
+  
+  /* Cada elemento de la lista */
+  .job-overview__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem; /* Espacio horizontal entre icono e info */
+  }
+  
+/* Ícono con Font Awesome */
+.job-overview__icon {
+    font-size: 1.2rem; /* Ajusta el tamaño del ícono */
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Contenedor para el texto (label + value) */
+  .job-overview__info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Texto que describe la categoría (p. ej. "Job Title") */
+  .job-overview__label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Valor de la categoría (p. ej. "Corporate Solutions Executive") */
+  .job-overview__value {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #666;
+  }
+  
+  /* Contenedor del mapa */
+  .job-overview__map {
+    margin-top: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Imagen o iframe del mapa */
+  .job-overview__map img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+
+ /* Contenedor principal del formulario */
+.contact-form {
+  background-color: #EAF5F4; /* Fondo suave */
+  padding: 2rem;
+  border-radius: 12px;       /* Esquinas ligeramente redondeadas */
+  max-width: 400px;         /* Controla el ancho máximo si lo deseas */
+  margin: 0 auto;           /* Centra el contenedor */
+}
+
+/* Título del formulario */
+.title--contact,
+.contact-form__title {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Formulario */
+.contact-form__form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Campo individual */
+.contact-form__field {
+  margin-bottom: 0.8rem;
+}
+
+/* Etiquetas */
+.contact-form__label {
+  display: none;
+}
+
+/* Contenedor para ícono + input */
+.contact-form__input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 18px;        /* Menos redondeado que antes */
+  border: 1px solid #dce8e6; /* Color suave para el borde */
+  padding: 0.5rem 1rem;
+}
+
+/* Ajuste especial para el textarea */
+.contact-form__input-wrapper:has(.contact-form__textarea) {
+  border-radius: 8px;
+  align-items: flex-start;
+}
+
+/* Ícono dentro del campo */
+.contact-form__icon {
+  color: #666;
+  margin-right: 0.8rem;
+  padding-top: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Inputs y textarea */
+.contact-form__input,
+.contact-form__textarea {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.9rem;
+  color: #333;
+  padding: 0.25rem 0;
+  font-family: inherit;
+}
+
+.contact-form__textarea {
+  resize: none;
+}
+
+/* Placeholder */
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+  color: #aaa;
+}
+
+/* Botón de envío */
+.contact-form__button {
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: #2D8F89; /* Un verde más cercano al de la imagen */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.5rem;
+}
+
+.contact-form__button:hover {
+  background-color: #268278; /* Efecto hover */
+}
+
+  /* Media query para dispositivos pequeños */
+  @media (max-width: 480px) {
+    .jobs-wrapper {
+      flex-direction: column; /* Cambia de row a column */
+      padding: 20px 25px; /* Reduce padding en móviles */
+      max-width: 100%;
+      margin-bottom: 70px;
+    }
+    
+    .jobs__side-bar {
+      max-width: 100%; /* Ocupa el ancho completo */
+      width: 100%;
+      min-width: 350px;
+      order: -1; /* Asegura que aparezca primero */
+      margin-bottom: 30px;
+      margin-top: 50px;
+    }
+  
+    .button--filters {
+      display: block; /*Aparece el boton en resoluciones mas pequeñas*/
+      margin: 30px 0;
+  }
+    
+    .jobs__jobs-container {
+      width: 100%; /* Ocupa ancho completo */
+      margin-left: 0; /* Elimina margen izquierdo */
+      order: 2; /* Aparece después del sidebar */
+    }
+    
+    .jobs__filters-container {
+      max-width: 100%; /* Ajusta el ancho máximo */
+    }
+  }
