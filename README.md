@@ -6,9 +6,9 @@
 <img style="margin-bottom: 10px" src="img/logos/jmj blanco.svg" alt="jmj logo" width="250"/>
 
 
-[![GitHub Juan Maestre](https://img.shields.io/badge/by-JuandiGo1-red)](https://github.com/JuandiGo1)
-[![GitHub JaymedDLC](https://img.shields.io/badge/by-JaymedDLC-green)](https://github.com/JaymeDDLC)
-[![GitHub FernandoMVG](https://img.shields.io/badge/by-FernandoMVG-purple)]((https://github.com/FernandoMVG))
+[![GitHub Juan Maestre](https://img.shields.io/badge/by-JuandiGo1-white)](https://github.com/JuandiGo1)
+[![GitHub FernandoMVG](https://img.shields.io/badge/by-FernandoMVG-green)]((https://github.com/FernandoMVG))
+[![GitHub JaymedDLC](https://img.shields.io/badge/by-JaymedDLC-white)](https://github.com/JaymeDDLC)
 
 </div>
 
