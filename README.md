@@ -25,6 +25,7 @@ Maqueta de un portal de empleos  donde los usuarios pueden buscar ofertas de tra
 
 ## 📸 Capturas de Pantalla
 
+![image](https://github.com/user-attachments/assets/93532ddf-bfd9-48f1-98de-23917efe73ce)
 
 
 ## 🛠️ Tecnologías Usadas
