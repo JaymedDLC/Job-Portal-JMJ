@@ -46,7 +46,7 @@ El portal incluye un **modo oscuro**, activado mediante un botón. Se guarda en 
    ```sh
    git clone https://github.com/tu-usuario/job-portal.git
    ```
-2. Abre `index.html` en tu navegador.
+2. Abre `home.html` en tu navegador.
 3. ¡Disfruta del portal de empleos! 🎉
 
 
