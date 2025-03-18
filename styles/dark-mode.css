@@ -38,6 +38,15 @@ body, .dark-mode, .light, .dark-mode .header, .dark-mode .footer, .dark-mode .re
     color: #00b894;
 }
 
+.dark-mode .category-card {
+  background-color: #121212;
+  box-shadow: 0px 4px 10px rgba(11, 11, 11, 0.819);
+}
+
+.dark-mode .categories-header p{
+    color: #ffffff;
+}
+
 .dark-mode .time-label {
     background: #5ba59658;
     color: #ffffff;
@@ -46,6 +55,12 @@ body, .dark-mode, .light, .dark-mode .header, .dark-mode .footer, .dark-mode .re
 .dark-mode .job-info {
     color: #cacaca;
 }
+
+.dark-mode .jobs-count{
+    background-color: #b9d3ced2;
+}
+
+
 
 .dark-mode .job-btn {
     background: #00b894;
@@ -60,17 +75,52 @@ body, .dark-mode, .light, .dark-mode .header, .dark-mode .footer, .dark-mode .re
     color: #00b894;
 }
 
+.dark-mode .stat-info h3{
+  color: #00b894
+}
+
+.dark-mode .btn-info.primary {
+    background: #00b894;
+    color: #ffffff;
+}
+
+
+.dark-mode .btn-info.btn-info.secondary {
+    color: #00b894;
+}
+
+.dark-mode .testimonial-card{
+    background-color: #121212;
+    box-shadow: 0px 4px 10px rgba(11, 11, 11, 0.819);
+}
+
+.dark-mode .testimonial-card p{
+    color: #ffffff;
+}
+
+.dark-mode .testimonial-title{
+    color: #ffffff;
+}
+
+.dark-mode .blog-card {
+  color: #ffffff;
+  background-color: #121212;
+}
+
+.dark-mode .blog-title {
+  color: #ffffff;
+}
+
+.dark-mode .date {
+  color: #a7a3a3;
+}
+
 
 /*Dark mode job section*/
 
 .dark-mode .home__hero {
     background: black;
 }
-
-
-
-
-
 
 
 /* Dark Mode Styles for Jobs Portal - Reglas Únicas */
@@ -80,9 +130,7 @@ body, .dark-mode, .light, .dark-mode .header, .dark-mode .footer, .dark-mode .re
     filter: blur(30px) brightness(0.15);
 }
 
-.dark-mode .container-header {
-    background-color: rgba(18, 18, 18, 0.8);
-}
+
 
 .dark-mode .btn:hover {
     background: rgba(255, 255, 255, 0.1);

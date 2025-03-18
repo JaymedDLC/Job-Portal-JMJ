@@ -167,9 +167,7 @@ body, .dark-mode, .light, .dark-mode .header, .dark-mode .footer, .dark-mode .re
     filter: blur(30px) brightness(0.15);
 }
 
-.dark-mode .container-header {
-    background-color: rgba(18, 18, 18, 0.8);
-}
+
 
 .dark-mode .btn:hover {
     background: rgba(255, 255, 255, 0.1);
